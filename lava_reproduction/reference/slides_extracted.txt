@@ -1,0 +1,228 @@
+ppt/slides/slide1.xml
+Revisiting Lifetime-Aware
+VM Allocation
+Prediction Sensitivity and Host-Level
+Confidence-Aware Scheduling
+From reproduction → negative result → mechanism-driven improvement
+MLSys 2025 reproduction
+20 paired test seeds
+95% confidence intervals
+Course Project Author
+Frozen artifact: 377cbb1
+ppt/slides/slide10.xml
+10
+Failure diagnosis · the policy switch contaminates host state
+252.58
+switches per 1,000 VMs
+552.85
+Best-Fit → LAVA host
+235.55
+LAVA → baseline host
+0
+scheduling failures
+Mechanism
+LAVA assumes hosts represent lifetime cohorts. A low-confidence Best-Fit decision can inject an incompatible VM; later high-confidence decisions cannot undo that history.
+New hypothesis
+Keep confidence decisions, but isolate their effects: once a host enters baseline or lifetime-aware mode, retain that mode until the host becomes empty.
+The redesign follows measured failure evidence—not a search for favorable parameters.
+LAVA reproduction · commit 377cbb1
+10
+ppt/slides/slide11.xml
+11
+Attempt 2 · Host-Level Confidence-Aware LAVA
+Stable host mode
+A non-empty host does not switch between lifetime-aware and baseline scheduling.
+Natural reset point
+Mode ends only when the host becomes empty—the same boundary used by LAVA state.
+Admission fairness
+Cross-mode placement remains a capacity fallback, so the algorithm does not reject extra VMs.
+LAVA reproduction · commit 377cbb1
+11
+ppt/slides/slide12.xml
+12
+Host isolation removes the measured failure mechanism
+Same confidence sequence
+Both algorithms see 252.58 gate changes per 1,000 VMs.
+Only routing changes
+VM-Level mixes policies inside hosts; Host-Level isolates modes.
+Controlled mechanism test
+Cross-mode placements fall from hundreds per trace to zero.
+LAVA reproduction · commit 377cbb1
+12
+ppt/slides/slide13.xml
+13
+Final held-out result · significant improvement
+vs Best-Fit
++0.241 pp
+95% CI [0.125, 0.357]
+vs original LAVA
++0.285 pp
+95% CI [0.112, 0.459]
+vs VM-Level CA-LAVA
++0.190 pp
+95% CI [0.004, 0.375]
+New test seeds 20–39 · threshold fixed on validation seeds 200–205
+LAVA reproduction · commit 377cbb1
+13
+ppt/slides/slide14.xml
+14
+Ablation, controls, and limitations
+Validation only
+τ = 0.3 selected before final test.
+Fair admission
+0 failures; equal accepted VMs; no oversubscription.
+Preserved gains
+Host-Level equals LAVA at 50%+ and Oracle.
+Main limitation
+Synthetic traces and only three predictor profiles.
+Claim boundary
+Mechanistic synthetic evidence—not a numerical reproduction of Google's production deployment.
+LAVA reproduction · commit 377cbb1
+14
+ppt/slides/slide15.xml
+15
+Takeaways
+1 · Prediction quality matters
+85% is the first tested significant LAVA point; Oracle reveals larger headroom.
+2 · Uncertainty alone is insufficient
+VM-level confidence gating does not significantly improve LAVA.
+3 · Match policy to state granularity
+Host-level isolation turns the same confidence sequence into a significant gain.
+Prediction uncertainty becomes actionable only when the control policy preserves host-level state.
+LAVA reproduction · commit 377cbb1
+15
+ppt/slides/slide2.xml
+02
+The problem: packing today can fragment tomorrow
+Multidimensional fragmentation
+CPU and memory can remain individually free but unusable together.
+Time is the hidden dimension
+VMs that fit equally well may exit hours—or months—apart.
+Operational consequence
+Fewer empty hosts means lower obtainability, less maintenance flexibility, and weaker energy opportunities.
+Research objective: maximize time-weighted empty-host percentage without rejecting VMs.
+LAVA reproduction · commit 377cbb1
+2
+ppt/slides/slide3.xml
+03
+What LAVA adds to conventional bin packing
+1 · Distributional prediction
+Predict remaining-lifetime distributions rather than a single permanent label.
+2 · Re-prediction
+Condition on uptime so initially unpredictable long-lived VMs can be corrected later.
+3 · Host lifecycle state
+Hosts move from empty → open → recycling and adapt their lifetime class.
+4 · Temporal placement
+Prefer placements that allow host cohorts to exit together.
+empty
+open
+recycling
+first VM
+≥90% CPU or memory
+Adaptation to mistakes
+Residual cohorts lower the host class when they depart; missed deadlines raise it when VMs outlive their prediction.
+LAVA reproduction · commit 377cbb1
+3
+ppt/slides/slide4.xml
+04
+What this project reproduces—and what it does not
+Reproduced
+Public algorithms, two-dimensional constraints, re-prediction, host states, controlled noise, paired statistics.
+Not reproducible
+Borg source, Google production traces, private features, hierarchical scores, rollout and warm-up behavior.
+Claim boundary
+Mechanistic reproduction and comparative synthetic evidence—not numerical replication of Google results.
+LAVA reproduction · commit 377cbb1
+4
+ppt/slides/slide5.xml
+05
+Methods compared
+Best-Fit
+Resource-only baseline
+Minimize residual CPU/memory
+LA-Binary
+One-shot short/long label
+Then Best-Fit
+NILAS
+Re-predicted temporal cost
+Then Best-Fit
+LAVA
+Lifetime classes + host states
+Adapt to outliving VMs
+VM-Level CA
+Per-arrival LAVA / Best-Fit switch
+Negative result
+Host-Level CA
+Stable mode per non-empty host
+Final improvement
+LAVA reproduction · commit 377cbb1
+5
+ppt/slides/slide6.xml
+06
+Prediction quality is experimentally controlled
+Correct bucket
+Log10-domain Gaussian error
+σ = 0.001
+Incorrect bucket
+Log10-domain Gaussian error
+σ = 3
+No information leakage
+Scheduler sees only the noisy prediction and calibration model—not realized lifetime or hidden bucket.
+0%
+25%
+50%
+75%
+100%
+Default synthetic predictor
+Profile-specific two-exponential mixtures estimate E[T−u | T>u] and the probability mass inside the predicted lifetime class.
+Strict Oracle
+Uses realized remaining lifetime to measure algorithmic headroom.
+Statistical protocol
+20 paired seeds · identical traces · two-sided Student-t 95% CI.
+LAVA reproduction · commit 377cbb1
+6
+ppt/slides/slide7.xml
+07
+RQ1 · LAVA requires sufficiently accurate predictions
+First significant point
+85% accuracy
++0.161 pp [0.021, 0.302]
+Default model
+−0.026 pp
+CI crosses zero
+Oracle headroom
++0.721 pp
+[0.548, 0.894]
+Prediction quality is not a model-only metric; it changes the scheduler's conclusion.
+LAVA reproduction · commit 377cbb1
+7
+ppt/slides/slide8.xml
+08
+The accuracy sweep creates the innovation motive
+−0.026 pp
+Default synthetic model
++0.721 pp
+Strict Oracle
+85%
+First significant controlled level
+Observation
+Accurate lifetime information can help, but the default predictor does not realize that potential.
+Hypothesis
+Use prediction confidence to decide when lifetime-aware placement is trustworthy.
+Constraint
+Confidence cannot use realized future lifetime or the injected correct/incorrect label.
+Next question: where should the policy switch live—at the VM or the host?
+LAVA reproduction · commit 377cbb1
+8
+ppt/slides/slide9.xml
+09
+Attempt 1 · VM-Level Confidence-Aware LAVA
+Decision rule
+High confidence → LAVA
+Low confidence → Best-Fit
+Held-out result
+No significant improvement over LAVA. High-quality groups simply pass every VM.
+Why keep the negative result?
+It reveals that per-request confidence gating is incompatible with stateful host lifecycle management.
+LAVA reproduction · commit 377cbb1
+9

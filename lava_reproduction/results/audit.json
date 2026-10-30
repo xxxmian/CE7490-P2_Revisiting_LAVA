@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "admission equality",
+    "no oversubscription",
+    "same gate sequence",
+    "host isolation absent capacity fallback",
+    "strict oracle equivalence"
+  ],
+  "unit_tests": 16,
+  "warning": "No numerical equivalence claim"
+}

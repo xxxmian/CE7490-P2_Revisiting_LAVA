@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="324" viewBox="0 0 1100 324">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">DIAGNOSTIC: arrival window vs full horizon, seeds 1000-1099</text>
+<path d="M882.7628668442003 48 V289" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">synthetic arrival window | host_ca vs best_fit</text>
+<path d="M510.0 64 H535.6092611342923 M510.0 59 v10 M535.6092611342923 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="522.8046305671461" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">synthetic full horizon | host_ca vs best_fit</text>
+<path d="M829.5632761789393 92 H870.5927420398076 M829.5632761789393 87 v10 M870.5927420398076 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="850.0780091093735" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">synthetic arrival window | host_ca vs vm_ca</text>
+<path d="M558.4735455896124 120 H585.1017692774469 M558.4735455896124 115 v10 M585.1017692774469 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="571.7876574335297" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">synthetic full horizon | host_ca vs vm_ca</text>
+<path d="M835.4409621628969 148 H875.3224602000712 M835.4409621628969 143 v10 M875.3224602000712 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="855.381711181484" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">0.25 arrival window | vm_ca_bayes vs lava</text>
+<path d="M981.9100874578409 176 H1010.0 M981.9100874578409 171 v10 M1010.0 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="995.9550437289205" cy="176" r="4" fill="#173c51"/>
+<text x="15" y="208" font-family="sans-serif" font-size="13">0.25 full horizon | vm_ca_bayes vs lava</text>
+<path d="M945.7033166136143 204 H982.5559401849947 M945.7033166136143 199 v10 M982.5559401849947 199 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="964.1296283993046" cy="204" r="4" fill="#173c51"/>
+<text x="15" y="236" font-family="sans-serif" font-size="13">0.5 arrival window | vm_ca_bayes vs lava</text>
+<path d="M945.7536543586896 232 H969.7475506432484 M945.7536543586896 227 v10 M969.7475506432484 227 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="957.7506025009691" cy="232" r="4" fill="#173c51"/>
+<text x="15" y="264" font-family="sans-serif" font-size="13">0.5 full horizon | vm_ca_bayes vs lava</text>
+<path d="M914.7325279640629 260 H957.1919858718693 M914.7325279640629 255 v10 M957.1919858718693 255 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="935.9622569179662" cy="260" r="4" fill="#173c51"/>
+<text x="470.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">-1.138 pp</text>
+<text x="586.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">-0.818 pp</text>
+<text x="702.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">-0.498 pp</text>
+<text x="818.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">-0.179 pp</text>
+<text x="934.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.141 pp</text>
+<text x="1050.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.461 pp</text>
+</svg>

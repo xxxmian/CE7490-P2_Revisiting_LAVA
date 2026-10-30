@@ -1,0 +1,53 @@
+{
+  "hosts": {
+    "status": "report_recovered",
+    "source": "Report \u00a74.1 p5",
+    "value": 180
+  },
+  "vms": {
+    "status": "report_recovered",
+    "source": "Report \u00a74.1 p5",
+    "value": 2500
+  },
+  "arrival_rate": {
+    "status": "report_recovered",
+    "source": "Report \u00a74.1 p5",
+    "caveat": "Rate recovered; Poisson process inferred"
+  },
+  "recycle_at": {
+    "status": "report_recovered",
+    "source": "Report \u00a73.1 p3"
+  },
+  "cap_hours": {
+    "status": "report_recovered",
+    "source": "Report \u00a73.2 p3"
+  },
+  "threshold": {
+    "status": "report_recovered",
+    "source": "Report \u00a74.3 p5",
+    "caveat": "Frozen original threshold, not newly selected"
+  },
+  "class_bounds": {
+    "status": "public_paper_completion",
+    "source": "https://arxiv.org/html/2412.09840v1 \u00a74.3",
+    "caveat": "Not known original course code boundaries"
+  },
+  "temporal_bounds": {
+    "status": "public_paper_completion",
+    "source": "https://arxiv.org/html/2412.09840v1 \u00a74.2"
+  },
+  "profiles": {
+    "status": "inferred",
+    "caveat": "Names and mixture family recovered, numeric parameters invented as explicit synthetic defaults, not original values"
+  },
+  "profile_weights": {
+    "status": "inferred"
+  },
+  "shapes": {
+    "status": "inferred",
+    "caveat": "Balanced/skewed nature recovered, numeric shapes unknown"
+  },
+  "shape_weights": {
+    "status": "inferred"
+  }
+}

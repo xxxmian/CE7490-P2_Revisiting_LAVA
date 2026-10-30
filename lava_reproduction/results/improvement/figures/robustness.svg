@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="996" viewBox="0 0 1100 996">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">IMPROVEMENT: VM-CA-Bayes minus LAVA, robustness seeds 2000-2049 (n=50), descriptive</text>
+<path d="M637.2860798881346 48 V961" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">protocol acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M728.2186627863543 64 H836.502190688567 M728.2186627863543 59 v10 M836.502190688567 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="782.3604267374607" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">protocol acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M724.4388171633473 92 H789.2110157172478 M724.4388171633473 87 v10 M789.2110157172478 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="756.8249164402976" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">protocol acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M665.3303914770912 120 H754.9503498610918 M665.3303914770912 115 v10 M754.9503498610918 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="710.1403706690915" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">protocol acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M667.0374358766863 148 H771.5147396589284 M667.0374358766863 143 v10 M771.5147396589284 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="719.2760877678073" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">bad_sigma=1 acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M608.484958221832 176 H697.4551579889985 M608.484958221832 171 v10 M697.4551579889985 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="652.9700581054152" cy="176" r="4" fill="#173c51"/>
+<text x="15" y="208" font-family="sans-serif" font-size="13">bad_sigma=1 acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M645.7288851086403 204 H760.4218577685765 M645.7288851086403 199 v10 M760.4218577685765 199 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="703.0753714386084" cy="204" r="4" fill="#173c51"/>
+<text x="15" y="236" font-family="sans-serif" font-size="13">bad_sigma=1 acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M611.8242829563869 232 H694.8368355827023 M611.8242829563869 227 v10 M694.8368355827023 227 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="653.3305592695447" cy="232" r="4" fill="#173c51"/>
+<text x="15" y="264" font-family="sans-serif" font-size="13">bad_sigma=1 acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M653.3554564568874 260 H741.7684458071067 M653.3554564568874 255 v10 M741.7684458071067 255 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="697.561951131997" cy="260" r="4" fill="#173c51"/>
+<text x="15" y="292" font-family="sans-serif" font-size="13">bad_sigma=0.5 acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M631.2715858427067 288 H733.6001761810155 M631.2715858427067 283 v10 M733.6001761810155 283 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="682.4358810118612" cy="288" r="4" fill="#173c51"/>
+<text x="15" y="320" font-family="sans-serif" font-size="13">bad_sigma=0.5 acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M630.2323800067651 316 H724.7189630903198 M630.2323800067651 311 v10 M724.7189630903198 311 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="677.4756715485424" cy="316" r="4" fill="#173c51"/>
+<text x="15" y="348" font-family="sans-serif" font-size="13">bad_sigma=0.5 acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M613.3464902967322 344 H709.5000043355149 M613.3464902967322 339 v10 M709.5000043355149 339 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="661.4232473161236" cy="344" r="4" fill="#173c51"/>
+<text x="15" y="376" font-family="sans-serif" font-size="13">bad_sigma=0.5 acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M653.7528305052324 372 H739.8075010447941 M653.7528305052324 367 v10 M739.8075010447941 367 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="696.7801657750132" cy="372" r="4" fill="#173c51"/>
+<text x="15" y="404" font-family="sans-serif" font-size="13">fusion_assumes_3_true_1 acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M642.6824506597492 400 H738.5465543189288 M642.6824506597492 395 v10 M738.5465543189288 395 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="690.614502489339" cy="400" r="4" fill="#173c51"/>
+<text x="15" y="432" font-family="sans-serif" font-size="13">fusion_assumes_3_true_1 acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M639.0125181484068 428 H731.6348903824269 M639.0125181484068 423 v10 M731.6348903824269 423 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="685.3237042654168" cy="428" r="4" fill="#173c51"/>
+<text x="15" y="460" font-family="sans-serif" font-size="13">fusion_assumes_3_true_1 acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M589.9113196234623 456 H686.922284473135 M589.9113196234623 451 v10 M686.922284473135 451 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="638.4168020482987" cy="456" r="4" fill="#173c51"/>
+<text x="15" y="488" font-family="sans-serif" font-size="13">fusion_assumes_3_true_1 acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M637.1412079951203 484 H723.067036536215 M637.1412079951203 479 v10 M723.067036536215 479 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="680.1041222656677" cy="484" r="4" fill="#173c51"/>
+<text x="15" y="516" font-family="sans-serif" font-size="13">fusion_assumes_1_true_3 acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M702.4222078052525 512 H789.3964974877972 M702.4222078052525 507 v10 M789.3964974877972 507 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="745.9093526465248" cy="512" r="4" fill="#173c51"/>
+<text x="15" y="544" font-family="sans-serif" font-size="13">fusion_assumes_1_true_3 acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M712.3107326522077 540 H786.1020984134676 M712.3107326522077 535 v10 M786.1020984134676 535 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="749.2064155328376" cy="540" r="4" fill="#173c51"/>
+<text x="15" y="572" font-family="sans-serif" font-size="13">fusion_assumes_1_true_3 acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M649.873454951774 568 H765.7983972588156 M649.873454951774 563 v10 M765.7983972588156 563 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="707.8359261052948" cy="568" r="4" fill="#173c51"/>
+<text x="15" y="600" font-family="sans-serif" font-size="13">fusion_assumes_1_true_3 acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M630.4477863016164 596 H732.9010991039604 M630.4477863016164 591 v10 M732.9010991039604 591 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="681.6744427027884" cy="596" r="4" fill="#173c51"/>
+<text x="15" y="628" font-family="sans-serif" font-size="13">prior_means_x0.5 acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M747.8456644355299 624 H870.9023550394368 M747.8456644355299 619 v10 M870.9023550394368 619 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="809.3740097374832" cy="624" r="4" fill="#173c51"/>
+<text x="15" y="656" font-family="sans-serif" font-size="13">prior_means_x0.5 acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M676.51633570255 652 H772.7019505371128 M676.51633570255 647 v10 M772.7019505371128 647 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="724.6091431198314" cy="652" r="4" fill="#173c51"/>
+<text x="15" y="684" font-family="sans-serif" font-size="13">prior_means_x0.5 acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M565.8879306720421 680 H666.2783597466628 M565.8879306720421 675 v10 M666.2783597466628 675 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="616.0831452093524" cy="680" r="4" fill="#173c51"/>
+<text x="15" y="712" font-family="sans-serif" font-size="13">prior_means_x0.5 acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M510.0 708 H615.0770497427472 M510.0 703 v10 M615.0770497427472 703 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="562.5385248713736" cy="708" r="4" fill="#173c51"/>
+<text x="15" y="740" font-family="sans-serif" font-size="13">prior_means_x2 acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M729.2031932187532 736 H832.8886712039431 M729.2031932187532 731 v10 M832.8886712039431 731 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="781.0459322113481" cy="736" r="4" fill="#173c51"/>
+<text x="15" y="768" font-family="sans-serif" font-size="13">prior_means_x2 acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M724.6283665787789 764 H827.7954903009104 M724.6283665787789 759 v10 M827.7954903009104 759 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="776.2119284398445" cy="764" r="4" fill="#173c51"/>
+<text x="15" y="796" font-family="sans-serif" font-size="13">prior_means_x2 acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M681.6071533826521 792 H785.3706945972903 M681.6071533826521 787 v10 M785.3706945972903 787 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="733.4889239899712" cy="792" r="4" fill="#173c51"/>
+<text x="15" y="824" font-family="sans-serif" font-size="13">prior_means_x2 acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M664.9324945750884 820 H754.3444521384174 M664.9324945750884 815 v10 M754.3444521384174 815 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="709.6384733567529" cy="820" r="4" fill="#173c51"/>
+<text x="15" y="852" font-family="sans-serif" font-size="13">arrival_x2 acc 0.25 | vm_ca_bayes vs lava</text>
+<path d="M878.8881434134662 848 H1010.0000000000001 M878.8881434134662 843 v10 M1010.0000000000001 843 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="944.4440717067332" cy="848" r="4" fill="#173c51"/>
+<text x="15" y="880" font-family="sans-serif" font-size="13">arrival_x2 acc 0.5 | vm_ca_bayes vs lava</text>
+<path d="M747.0937153591639 876 H877.3329615147088 M747.0937153591639 871 v10 M877.3329615147088 871 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="812.2133384369363" cy="876" r="4" fill="#173c51"/>
+<text x="15" y="908" font-family="sans-serif" font-size="13">arrival_x2 acc 0.75 | vm_ca_bayes vs lava</text>
+<path d="M694.1393159565761 904 H809.090932860403 M694.1393159565761 899 v10 M809.090932860403 899 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="751.6151244084895" cy="904" r="4" fill="#173c51"/>
+<text x="15" y="936" font-family="sans-serif" font-size="13">arrival_x2 acc 0.85 | vm_ca_bayes vs lava</text>
+<path d="M629.2704635079185 932 H776.1525504578215 M629.2704635079185 927 v10 M776.1525504578215 927 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="702.7115069828699" cy="932" r="4" fill="#173c51"/>
+<text x="470.0" y="986" text-anchor="middle" font-family="sans-serif" font-size="12">-0.259 pp</text>
+<text x="586.0" y="986" text-anchor="middle" font-family="sans-serif" font-size="12">-0.079 pp</text>
+<text x="702.0" y="986" text-anchor="middle" font-family="sans-serif" font-size="12">0.100 pp</text>
+<text x="818.0" y="986" text-anchor="middle" font-family="sans-serif" font-size="12">0.280 pp</text>
+<text x="934.0" y="986" text-anchor="middle" font-family="sans-serif" font-size="12">0.460 pp</text>
+<text x="1050.0" y="986" text-anchor="middle" font-family="sans-serif" font-size="12">0.639 pp</text>
+</svg>

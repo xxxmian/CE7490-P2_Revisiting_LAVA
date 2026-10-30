@@ -1,0 +1,21 @@
+verify_reproduction.py  2026-10-29 00:29:07 +0800
+python 3.14.6 on macOS-27.0.1-arm64-arm-64bit-Mach-O (arm)
+sha256 lava/__init__.py 38a47e9ce6bdb4d66767d7331e4887e9b0d3daac001bf922ec9192687b1c64dc
+sha256 lava/charts.py 5b0d45ab27ced9e7f620d6e472e85e70484b45b7afec1a3fae50b847aa5ebf4c
+sha256 lava/model.py 3fe49e542d11fb68a24fa4922f7c34a70a3fd9787a450ec8dac68f8465d46bfe
+sha256 lava/simulator.py 471922adcc8322fe3ae2a9a2ac1a67db169b908b70e109eb436b04c6ac02e644
+sha256 lava/stats.py 5eebbdce9135a0376aa47fee553a1405b451ee51094e9934bc2ec845a137f54a
+tolerance: integer/text fields exact; floats relative difference <= 1e-12
+
+smoke           runs=   36 all       bit-identical=   36  outside tolerance=0  worst float relative difference=0.0e+00
+heldout         runs=  840 all       bit-identical=  840  outside tolerance=0  worst float relative difference=0.0e+00
+validation      runs=  168 all       bit-identical=  168  outside tolerance=0  worst float relative difference=0.0e+00
+sweep           runs=  600 all       bit-identical=  600  outside tolerance=0  worst float relative difference=0.0e+00
+test            runs=   50 of 7000   bit-identical=   49  outside tolerance=0  worst float relative difference=1.7e-16
+legacy          runs=   50 of 1400   bit-identical=   47  outside tolerance=0  worst float relative difference=3.4e-16
+tau             runs=   50 of 2240   bit-identical=   50  outside tolerance=0  worst float relative difference=0.0e+00
+robust          runs=   50 of 9800   bit-identical=   50  outside tolerance=0  worst float relative difference=0.0e+00
+robust_control  runs=   50 of 1400   bit-identical=   48  outside tolerance=0  worst float relative difference=5.2e-16
+robust_load     runs=   50 of 1400   bit-identical=   45  outside tolerance=0  worst float relative difference=4.2e-16
+
+RESULT: PASS  (79 s, 8 workers)

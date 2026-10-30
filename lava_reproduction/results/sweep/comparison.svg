@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">RECONSTRUCTION: paired mean and Student-t 95% CI</text>
+<path d="M660.3766913503947 48 V625" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">0.25 | lava vs best_fit</text>
+<path d="M523.1999597937454 64 H660.4944265323509 M523.1999597937454 59 v10 M660.4944265323509 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="591.8471931630481" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">0.25 | vm_ca vs best_fit</text>
+<path d="M510.0 92 H640.5856052038066 M510.0 87 v10 M640.5856052038066 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="575.2928026019033" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">0.5 | lava vs best_fit</text>
+<path d="M630.8424635541746 120 H769.89211766605 M630.8424635541746 115 v10 M769.89211766605 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="700.3672906101124" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">0.5 | vm_ca vs best_fit</text>
+<path d="M630.8424635541746 148 H769.89211766605 M630.8424635541746 143 v10 M769.89211766605 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="700.3672906101124" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">0.75 | lava vs best_fit</text>
+<path d="M731.887883317212 176 H856.5015646279347 M731.887883317212 171 v10 M856.5015646279347 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="794.1947239725735" cy="176" r="4" fill="#173c51"/>
+<text x="15" y="208" font-family="sans-serif" font-size="13">0.75 | vm_ca vs best_fit</text>
+<path d="M731.887883317212 204 H856.5015646279347 M731.887883317212 199 v10 M856.5015646279347 199 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="794.1947239725735" cy="204" r="4" fill="#173c51"/>
+<text x="15" y="236" font-family="sans-serif" font-size="13">0.8 | lava vs best_fit</text>
+<path d="M730.7373115733997 232 H879.5699891795566 M730.7373115733997 227 v10 M879.5699891795566 227 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="805.1536503764783" cy="232" r="4" fill="#173c51"/>
+<text x="15" y="264" font-family="sans-serif" font-size="13">0.8 | vm_ca vs best_fit</text>
+<path d="M730.7373115733997 260 H879.5699891795566 M730.7373115733997 255 v10 M879.5699891795566 255 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="805.1536503764783" cy="260" r="4" fill="#173c51"/>
+<text x="15" y="292" font-family="sans-serif" font-size="13">0.85 | lava vs best_fit</text>
+<path d="M778.1237316420701 288 H926.8541733009583 M778.1237316420701 283 v10 M926.8541733009583 283 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="852.4889524715143" cy="288" r="4" fill="#173c51"/>
+<text x="15" y="320" font-family="sans-serif" font-size="13">0.85 | vm_ca vs best_fit</text>
+<path d="M778.1237316420701 316 H926.8541733009583 M778.1237316420701 311 v10 M926.8541733009583 311 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="852.4889524715143" cy="316" r="4" fill="#173c51"/>
+<text x="15" y="348" font-family="sans-serif" font-size="13">0.9 | lava vs best_fit</text>
+<path d="M793.6482579762566 344 H938.3758137672871 M793.6482579762566 339 v10 M938.3758137672871 339 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="866.0120358717718" cy="344" r="4" fill="#173c51"/>
+<text x="15" y="376" font-family="sans-serif" font-size="13">0.9 | vm_ca vs best_fit</text>
+<path d="M793.6482579762566 372 H938.3758137672871 M793.6482579762566 367 v10 M938.3758137672871 367 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="866.0120358717718" cy="372" r="4" fill="#173c51"/>
+<text x="15" y="404" font-family="sans-serif" font-size="13">0.95 | lava vs best_fit</text>
+<path d="M807.1142180277091 400 H992.3037067482691 M807.1142180277091 395 v10 M992.3037067482691 395 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="899.708962387989" cy="400" r="4" fill="#173c51"/>
+<text x="15" y="432" font-family="sans-serif" font-size="13">0.95 | vm_ca vs best_fit</text>
+<path d="M807.1142180277091 428 H992.3037067482691 M807.1142180277091 423 v10 M992.3037067482691 423 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="899.708962387989" cy="428" r="4" fill="#173c51"/>
+<text x="15" y="460" font-family="sans-serif" font-size="13">1.0 | lava vs best_fit</text>
+<path d="M843.7173299642369 456 H973.316733803128 M843.7173299642369 451 v10 M973.316733803128 451 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="908.5170318836824" cy="456" r="4" fill="#173c51"/>
+<text x="15" y="488" font-family="sans-serif" font-size="13">1.0 | vm_ca vs best_fit</text>
+<path d="M843.7173299642369 484 H973.316733803128 M843.7173299642369 479 v10 M973.316733803128 479 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="908.5170318836824" cy="484" r="4" fill="#173c51"/>
+<text x="15" y="516" font-family="sans-serif" font-size="13">oracle | lava vs best_fit</text>
+<path d="M871.1721973820665 512 H1009.9999999999999 M871.1721973820665 507 v10 M1009.9999999999999 507 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="940.5860986910334" cy="512" r="4" fill="#173c51"/>
+<text x="15" y="544" font-family="sans-serif" font-size="13">oracle | vm_ca vs best_fit</text>
+<path d="M871.1721973820665 540 H1009.9999999999999 M871.1721973820665 535 v10 M1009.9999999999999 535 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="940.5860986910334" cy="540" r="4" fill="#173c51"/>
+<text x="15" y="572" font-family="sans-serif" font-size="13">synthetic | lava vs best_fit</text>
+<path d="M662.9921726349992 568 H778.3841911374179 M662.9921726349992 563 v10 M778.3841911374179 563 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="720.6881818862086" cy="568" r="4" fill="#173c51"/>
+<text x="15" y="600" font-family="sans-serif" font-size="13">synthetic | vm_ca vs best_fit</text>
+<path d="M637.4462743193737 596 H754.762937143206 M637.4462743193737 591 v10 M754.762937143206 591 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="696.1046057312899" cy="596" r="4" fill="#173c51"/>
+<text x="470.0" y="650" text-anchor="middle" font-family="sans-serif" font-size="12">-0.391 pp</text>
+<text x="586.0" y="650" text-anchor="middle" font-family="sans-serif" font-size="12">-0.153 pp</text>
+<text x="702.0" y="650" text-anchor="middle" font-family="sans-serif" font-size="12">0.085 pp</text>
+<text x="818.0" y="650" text-anchor="middle" font-family="sans-serif" font-size="12">0.323 pp</text>
+<text x="934.0" y="650" text-anchor="middle" font-family="sans-serif" font-size="12">0.562 pp</text>
+<text x="1050.0" y="650" text-anchor="middle" font-family="sans-serif" font-size="12">0.800 pp</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="296" viewBox="0 0 1100 296">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">RECONSTRUCTION: threshold validation, seeds 200-205 only</text>
+<path d="M870.7124959676222 48 V261" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">tau=0.1 | host_ca vs lava</text>
+<path d="M633.4864176480851 64 H922.0633816579426 M633.4864176480851 59 v10 M922.0633816579426 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="777.774899653014" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">tau=0.2 | host_ca vs lava</text>
+<path d="M633.4864176480851 92 H922.0633816579426 M633.4864176480851 87 v10 M922.0633816579426 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="777.774899653014" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">tau=0.3 | host_ca vs lava</text>
+<path d="M626.916174330217 120 H801.6559094882032 M626.916174330217 115 v10 M801.6559094882032 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="714.2860419092101" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">tau=0.5 | host_ca vs lava</text>
+<path d="M510.0 148 H1010.0 M510.0 143 v10 M1010.0 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="760.0" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">tau=0.7 | host_ca vs lava</text>
+<path d="M510.0 176 H1010.0 M510.0 171 v10 M1010.0 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="760.0" cy="176" r="4" fill="#173c51"/>
+<text x="15" y="208" font-family="sans-serif" font-size="13">tau=0.8 | host_ca vs lava</text>
+<path d="M510.0 204 H1010.0 M510.0 199 v10 M1010.0 199 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="760.0" cy="204" r="4" fill="#173c51"/>
+<text x="15" y="236" font-family="sans-serif" font-size="13">tau=0.9 | host_ca vs lava</text>
+<path d="M510.0 232 H1010.0 M510.0 227 v10 M1010.0 227 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="760.0" cy="232" r="4" fill="#173c51"/>
+<text x="470.0" y="286" text-anchor="middle" font-family="sans-serif" font-size="12">-0.615 pp</text>
+<text x="586.0" y="286" text-anchor="middle" font-family="sans-serif" font-size="12">-0.437 pp</text>
+<text x="702.0" y="286" text-anchor="middle" font-family="sans-serif" font-size="12">-0.259 pp</text>
+<text x="818.0" y="286" text-anchor="middle" font-family="sans-serif" font-size="12">-0.081 pp</text>
+<text x="934.0" y="286" text-anchor="middle" font-family="sans-serif" font-size="12">0.097 pp</text>
+<text x="1050.0" y="286" text-anchor="middle" font-family="sans-serif" font-size="12">0.275 pp</text>
+</svg>

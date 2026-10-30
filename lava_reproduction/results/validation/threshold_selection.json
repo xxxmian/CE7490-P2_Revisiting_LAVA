@@ -1,0 +1,14 @@
+{
+  "objective": "mean improvement over LAVA and VM CA on synthetic validation only (inferred)",
+  "scores": {
+    "0.1": -0.11043282880496481,
+    "0.2": -0.11043282880496481,
+    "0.3": -0.33811254702542354,
+    "0.5": -0.08502708200052804,
+    "0.7": -0.08502708200052804,
+    "0.8": -0.08502708200052804,
+    "0.9": -0.08502708200052804
+  },
+  "selected": 0.5,
+  "report_frozen_threshold": 0.3
+}

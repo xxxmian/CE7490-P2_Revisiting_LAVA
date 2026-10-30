@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="240" viewBox="0 0 1100 240">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">RECONSTRUCTION: default predictor, seeds 20-39, paired 95% CI</text>
+<path d="M799.7897126637286 48 V205" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">synthetic | lava vs best_fit</text>
+<path d="M700.7389040093259 64 H900.6807622569621 M700.7389040093259 59 v10 M900.6807622569621 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="800.709833133144" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">synthetic | vm_ca vs best_fit</text>
+<path d="M806.8093719193996 92 H1010.0 M806.8093719193996 87 v10 M1010.0 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="908.4046859596998" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">synthetic | host_ca vs best_fit</text>
+<path d="M667.7468430818878 120 H846.5392687971051 M667.7468430818878 115 v10 M846.5392687971051 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="757.1430559394964" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">synthetic | host_ca vs lava</text>
+<path d="M638.4089018528333 148 H874.0369690873289 M638.4089018528333 143 v10 M874.0369690873289 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="756.222935470081" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">synthetic | host_ca vs vm_ca</text>
+<path d="M510.0 176 H787.0561652870506 M510.0 171 v10 M787.0561652870506 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="648.5280826435253" cy="176" r="4" fill="#173c51"/>
+<text x="470.0" y="230" text-anchor="middle" font-family="sans-serif" font-size="12">-0.345 pp</text>
+<text x="586.0" y="230" text-anchor="middle" font-family="sans-serif" font-size="12">-0.224 pp</text>
+<text x="702.0" y="230" text-anchor="middle" font-family="sans-serif" font-size="12">-0.102 pp</text>
+<text x="818.0" y="230" text-anchor="middle" font-family="sans-serif" font-size="12">0.019 pp</text>
+<text x="934.0" y="230" text-anchor="middle" font-family="sans-serif" font-size="12">0.140 pp</text>
+<text x="1050.0" y="230" text-anchor="middle" font-family="sans-serif" font-size="12">0.262 pp</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="324" viewBox="0 0 1100 324">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">RECONSTRUCTION: LAVA accuracy sweep, seeds 0-19, paired 95% CI</text>
+<path d="M656.211506993087 48 V289" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">0.25 | lava vs best_fit</text>
+<path d="M510.0 64 H656.3369964852521 M510.0 59 v10 M656.3369964852521 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="583.168498242626" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">0.5 | lava vs best_fit</text>
+<path d="M624.7320869415955 92 H772.9398714824373 M624.7320869415955 87 v10 M772.9398714824373 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="698.8359792120165" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">0.75 | lava vs best_fit</text>
+<path d="M732.4325907416994 120 H865.2536160689638 M732.4325907416994 115 v10 M865.2536160689638 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="798.8431034053315" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">0.8 | lava vs best_fit</text>
+<path d="M731.2062396932565 148 H889.841380184455 M731.2062396932565 143 v10 M889.841380184455 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="810.5238099388557" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">0.85 | lava vs best_fit</text>
+<path d="M781.7136385110113 176 H940.2398095600208 M781.7136385110113 171 v10 M940.2398095600208 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="860.976724035516" cy="176" r="4" fill="#173c51"/>
+<text x="15" y="208" font-family="sans-serif" font-size="13">0.9 | lava vs best_fit</text>
+<path d="M798.2606459000733 204 H952.5202917999609 M798.2606459000733 199 v10 M952.5202917999609 199 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="875.3904688500171" cy="204" r="4" fill="#173c51"/>
+<text x="15" y="236" font-family="sans-serif" font-size="13">0.95 | lava vs best_fit</text>
+<path d="M812.6135050904711 232 H1010.0 M812.6135050904711 227 v10 M1010.0 227 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="911.3067525452356" cy="232" r="4" fill="#173c51"/>
+<text x="15" y="264" font-family="sans-serif" font-size="13">1.0 | lava vs best_fit</text>
+<path d="M851.6273822702628 260 H989.7625012927238 M851.6273822702628 255 v10 M989.7625012927238 255 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="920.6949417814933" cy="260" r="4" fill="#173c51"/>
+<text x="470.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">-0.359 pp</text>
+<text x="586.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">-0.135 pp</text>
+<text x="702.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.088 pp</text>
+<text x="818.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.312 pp</text>
+<text x="934.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.535 pp</text>
+<text x="1050.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.758 pp</text>
+</svg>

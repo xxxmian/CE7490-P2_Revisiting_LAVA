@@ -1,0 +1,222 @@
+[
+  {
+    "split": "initial",
+    "setting": "0.25",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": -0.14064592040948867,
+    "low": -0.28153347359710634,
+    "high": 0.00024163277812902506
+  },
+  {
+    "split": "initial",
+    "setting": "0.25",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": -0.17462118009875738,
+    "low": -0.30862429643494754,
+    "high": -0.040618063762567214
+  },
+  {
+    "split": "initial",
+    "setting": "0.5",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.08207435906262787,
+    "low": -0.06061431590564102,
+    "high": 0.22476303403089676
+  },
+  {
+    "split": "initial",
+    "setting": "0.5",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.08207435906262787,
+    "low": -0.06061431590564102,
+    "high": 0.22476303403089676
+  },
+  {
+    "split": "initial",
+    "setting": "0.75",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.27464027701006016,
+    "low": 0.14676537374105156,
+    "high": 0.40251518027906874
+  },
+  {
+    "split": "initial",
+    "setting": "0.75",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.27464027701006016,
+    "low": 0.14676537374105156,
+    "high": 0.40251518027906874
+  },
+  {
+    "split": "initial",
+    "setting": "0.8",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.29713173443418056,
+    "low": 0.14440400781563312,
+    "high": 0.449859461052728
+  },
+  {
+    "split": "initial",
+    "setting": "0.8",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.29713173443418056,
+    "low": 0.14440400781563312,
+    "high": 0.449859461052728
+  },
+  {
+    "split": "initial",
+    "setting": "0.85",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.3942799305703488,
+    "low": 0.24165711548101787,
+    "high": 0.5469027456596798
+  },
+  {
+    "split": "initial",
+    "setting": "0.85",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.3942799305703488,
+    "low": 0.24165711548101787,
+    "high": 0.5469027456596798
+  },
+  {
+    "split": "initial",
+    "setting": "0.9",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.42203391333560847,
+    "low": 0.27351874226870904,
+    "high": 0.5705490844025078
+  },
+  {
+    "split": "initial",
+    "setting": "0.9",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.42203391333560847,
+    "low": 0.27351874226870904,
+    "high": 0.5705490844025078
+  },
+  {
+    "split": "initial",
+    "setting": "0.95",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.49119150780518767,
+    "low": 0.3011554884251787,
+    "high": 0.6812275271851966
+  },
+  {
+    "split": "initial",
+    "setting": "0.95",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.49119150780518767,
+    "low": 0.3011554884251787,
+    "high": 0.6812275271851966
+  },
+  {
+    "split": "initial",
+    "setting": "1.0",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.5092686727344542,
+    "low": 0.3762775673012071,
+    "high": 0.6422597781677013
+  },
+  {
+    "split": "initial",
+    "setting": "1.0",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.5092686727344542,
+    "low": 0.3762775673012071,
+    "high": 0.6422597781677013
+  },
+  {
+    "split": "initial",
+    "setting": "oracle",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.5750853434688977,
+    "low": 0.4326243259940077,
+    "high": 0.7175463609437878
+  },
+  {
+    "split": "initial",
+    "setting": "oracle",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.5750853434688977,
+    "low": 0.4326243259940077,
+    "high": 0.7175463609437878
+  },
+  {
+    "split": "initial",
+    "setting": "synthetic",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.12377976378125481,
+    "low": 0.00536786029836854,
+    "high": 0.2421916672641411
+  },
+  {
+    "split": "initial",
+    "setting": "synthetic",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 20,
+    "mean": 0.07332587477402867,
+    "low": -0.04706104223738271,
+    "high": 0.19371279178544004
+  }
+]

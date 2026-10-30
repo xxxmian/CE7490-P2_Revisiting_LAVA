@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="688" viewBox="0 0 1100 688">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">RECONSTRUCTION: paired mean and Student-t 95% CI</text>
+<path d="M767.9645009275512 48 V653" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">0.85 | la_binary vs best_fit</text>
+<path d="M751.8948238298685 64 H761.4702318258956 M751.8948238298685 59 v10 M761.4702318258956 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="756.682527827882" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">0.85 | nilas vs best_fit</text>
+<path d="M744.9568688876004 92 H818.6986225055459 M744.9568688876004 87 v10 M818.6986225055459 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="781.8277456965732" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">0.85 | lava vs best_fit</text>
+<path d="M749.1239931439034 120 H813.4615019778104 M749.1239931439034 115 v10 M813.4615019778104 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="781.2927475608569" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">0.85 | vm_ca vs best_fit</text>
+<path d="M749.1239931439034 148 H813.4615019778104 M749.1239931439034 143 v10 M813.4615019778104 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="781.2927475608569" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">0.85 | host_ca vs best_fit</text>
+<path d="M749.1239931439034 176 H813.4615019778104 M749.1239931439034 171 v10 M813.4615019778104 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="781.2927475608569" cy="176" r="4" fill="#173c51"/>
+<text x="15" y="208" font-family="sans-serif" font-size="13">0.85 | host_ca vs lava</text>
+<path d="M767.9645009275512 204 H767.9645009275512 M767.9645009275512 199 v10 M767.9645009275512 199 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="767.9645009275512" cy="204" r="4" fill="#173c51"/>
+<text x="15" y="236" font-family="sans-serif" font-size="13">0.85 | host_ca vs vm_ca</text>
+<path d="M767.9645009275512 232 H767.9645009275512 M767.9645009275512 227 v10 M767.9645009275512 227 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="767.9645009275512" cy="232" r="4" fill="#173c51"/>
+<text x="15" y="264" font-family="sans-serif" font-size="13">oracle | la_binary vs best_fit</text>
+<path d="M721.6046549861926 260 H811.8399765940503 M721.6046549861926 255 v10 M811.8399765940503 255 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="766.7223157901215" cy="260" r="4" fill="#173c51"/>
+<text x="15" y="292" font-family="sans-serif" font-size="13">oracle | nilas vs best_fit</text>
+<path d="M738.5604234067039 288 H844.7877177488367 M738.5604234067039 283 v10 M844.7877177488367 283 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="791.6740705777703" cy="288" r="4" fill="#173c51"/>
+<text x="15" y="320" font-family="sans-serif" font-size="13">oracle | lava vs best_fit</text>
+<path d="M730.439778423316 316 H846.3377689920462 M730.439778423316 311 v10 M846.3377689920462 311 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="788.3887737076811" cy="316" r="4" fill="#173c51"/>
+<text x="15" y="348" font-family="sans-serif" font-size="13">oracle | vm_ca vs best_fit</text>
+<path d="M730.439778423316 344 H846.3377689920462 M730.439778423316 339 v10 M846.3377689920462 339 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="788.3887737076811" cy="344" r="4" fill="#173c51"/>
+<text x="15" y="376" font-family="sans-serif" font-size="13">oracle | host_ca vs best_fit</text>
+<path d="M730.439778423316 372 H846.3377689920462 M730.439778423316 367 v10 M846.3377689920462 367 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="788.3887737076811" cy="372" r="4" fill="#173c51"/>
+<text x="15" y="404" font-family="sans-serif" font-size="13">oracle | host_ca vs lava</text>
+<path d="M767.9645009275512 400 H767.9645009275512 M767.9645009275512 395 v10 M767.9645009275512 395 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="767.9645009275512" cy="400" r="4" fill="#173c51"/>
+<text x="15" y="432" font-family="sans-serif" font-size="13">oracle | host_ca vs vm_ca</text>
+<path d="M767.9645009275512 428 H767.9645009275512 M767.9645009275512 423 v10 M767.9645009275512 423 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="767.9645009275512" cy="428" r="4" fill="#173c51"/>
+<text x="15" y="460" font-family="sans-serif" font-size="13">synthetic | la_binary vs best_fit</text>
+<path d="M659.6068313641481 456 H859.4368069456609 M659.6068313641481 451 v10 M859.4368069456609 451 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="759.5218191549045" cy="456" r="4" fill="#173c51"/>
+<text x="15" y="488" font-family="sans-serif" font-size="13">synthetic | nilas vs best_fit</text>
+<path d="M614.6274976407077 484 H928.5543682997404 M614.6274976407077 479 v10 M928.5543682997404 479 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="771.590932970224" cy="484" r="4" fill="#173c51"/>
+<text x="15" y="516" font-family="sans-serif" font-size="13">synthetic | lava vs best_fit</text>
+<path d="M666.0684153265939 512 H853.4745220199513 M666.0684153265939 507 v10 M853.4745220199513 507 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="759.7714686732727" cy="512" r="4" fill="#173c51"/>
+<text x="15" y="544" font-family="sans-serif" font-size="13">synthetic | vm_ca vs best_fit</text>
+<path d="M714.8641212250088 540 H812.6441037630975 M714.8641212250088 535 v10 M812.6441037630975 535 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="763.7541124940532" cy="540" r="4" fill="#173c51"/>
+<text x="15" y="572" font-family="sans-serif" font-size="13">synthetic | host_ca vs best_fit</text>
+<path d="M510.0 568 H1009.9999999999999 M510.0 563 v10 M1009.9999999999999 563 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="760.0" cy="568" r="4" fill="#173c51"/>
+<text x="15" y="600" font-family="sans-serif" font-size="13">synthetic | host_ca vs lava</text>
+<path d="M611.8960856009571 596 H924.4899789075998 M611.8960856009571 591 v10 M924.4899789075998 591 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="768.1930322542785" cy="596" r="4" fill="#173c51"/>
+<text x="15" y="628" font-family="sans-serif" font-size="13">synthetic | host_ca vs vm_ca</text>
+<path d="M563.1003797025423 624 H965.3203971644537 M563.1003797025423 619 v10 M965.3203971644537 619 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="764.2103884334979" cy="624" r="4" fill="#173c51"/>
+<text x="470.0" y="678" text-anchor="middle" font-family="sans-serif" font-size="12">-9.022 pp</text>
+<text x="586.0" y="678" text-anchor="middle" font-family="sans-serif" font-size="12">-5.510 pp</text>
+<text x="702.0" y="678" text-anchor="middle" font-family="sans-serif" font-size="12">-1.997 pp</text>
+<text x="818.0" y="678" text-anchor="middle" font-family="sans-serif" font-size="12">1.515 pp</text>
+<text x="934.0" y="678" text-anchor="middle" font-family="sans-serif" font-size="12">5.027 pp</text>
+<text x="1050.0" y="678" text-anchor="middle" font-family="sans-serif" font-size="12">8.540 pp</text>
+</svg>

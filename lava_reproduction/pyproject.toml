@@ -1,0 +1,6 @@
+[project]
+name = "lava-reconstruction"
+version = "0.1.0"
+description = "Independent reconstruction from a course report; not recovered original code"
+requires-python = ">=3.9"
+dependencies = []

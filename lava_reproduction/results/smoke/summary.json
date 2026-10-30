@@ -1,0 +1,233 @@
+[
+  {
+    "split": "smoke",
+    "setting": "0.85",
+    "policy": "la_binary",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": -0.34159856013002354,
+    "low": -0.4865619258109928,
+    "high": -0.19663519444905433
+  },
+  {
+    "split": "smoke",
+    "setting": "0.85",
+    "policy": "nilas",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.41975498523098764,
+    "low": -0.6966311572821533,
+    "high": 1.5361411277441286
+  },
+  {
+    "split": "smoke",
+    "setting": "0.85",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.4035561704298516,
+    "low": -0.570457868863505,
+    "high": 1.377570209723208
+  },
+  {
+    "split": "smoke",
+    "setting": "0.85",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.4035561704298516,
+    "low": -0.570457868863505,
+    "high": 1.377570209723208
+  },
+  {
+    "split": "smoke",
+    "setting": "0.85",
+    "policy": "host_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.4035561704298516,
+    "low": -0.570457868863505,
+    "high": 1.377570209723208
+  },
+  {
+    "split": "smoke",
+    "setting": "0.85",
+    "policy": "host_ca",
+    "baseline": "lava",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "split": "smoke",
+    "setting": "0.85",
+    "policy": "host_ca",
+    "baseline": "vm_ca",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "split": "smoke",
+    "setting": "oracle",
+    "policy": "la_binary",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": -0.037611209547499413,
+    "low": -1.403695655140529,
+    "high": 1.3284732360455302
+  },
+  {
+    "split": "smoke",
+    "setting": "oracle",
+    "policy": "nilas",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.7178846095684221,
+    "low": -0.8903044223148917,
+    "high": 2.3260736414517362
+  },
+  {
+    "split": "smoke",
+    "setting": "oracle",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.6184115235658467,
+    "low": -1.1361834550998342,
+    "high": 2.3730065022315276
+  },
+  {
+    "split": "smoke",
+    "setting": "oracle",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.6184115235658467,
+    "low": -1.1361834550998342,
+    "high": 2.3730065022315276
+  },
+  {
+    "split": "smoke",
+    "setting": "oracle",
+    "policy": "host_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.6184115235658467,
+    "low": -1.1361834550998342,
+    "high": 2.3730065022315276
+  },
+  {
+    "split": "smoke",
+    "setting": "oracle",
+    "policy": "host_ca",
+    "baseline": "lava",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "split": "smoke",
+    "setting": "oracle",
+    "policy": "host_ca",
+    "baseline": "vm_ca",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.0,
+    "low": 0.0,
+    "high": 0.0
+  },
+  {
+    "split": "smoke",
+    "setting": "synthetic",
+    "policy": "la_binary",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": -0.25562974771289504,
+    "low": -3.2808821271687902,
+    "high": 2.769622631743
+  },
+  {
+    "split": "smoke",
+    "setting": "synthetic",
+    "policy": "nilas",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.10980206682311433,
+    "low": -4.642778268898267,
+    "high": 4.862382402544496
+  },
+  {
+    "split": "smoke",
+    "setting": "synthetic",
+    "policy": "lava",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": -0.2480707936843487,
+    "low": -3.085236581994118,
+    "high": 2.5890949946254205
+  },
+  {
+    "split": "smoke",
+    "setting": "synthetic",
+    "policy": "vm_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": -0.12748325259818216,
+    "low": -1.6077873159685194,
+    "high": 1.352820810772155
+  },
+  {
+    "split": "smoke",
+    "setting": "synthetic",
+    "policy": "host_ca",
+    "baseline": "best_fit",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": -0.2411512618378353,
+    "low": -7.810717265767665,
+    "high": 7.3284147420919945
+  },
+  {
+    "split": "smoke",
+    "setting": "synthetic",
+    "policy": "host_ca",
+    "baseline": "lava",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": 0.006919531846513394,
+    "low": -4.725480683773548,
+    "high": 4.739319747466575
+  },
+  {
+    "split": "smoke",
+    "setting": "synthetic",
+    "policy": "host_ca",
+    "baseline": "vm_ca",
+    "threshold": 0.3,
+    "n": 2,
+    "mean": -0.11366800923965314,
+    "low": -6.202929949799145,
+    "high": 5.975593931319839
+  }
+]

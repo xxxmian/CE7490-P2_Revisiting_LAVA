@@ -1,0 +1,34 @@
+test_accurate_value_trusted (test_bayes.BayesTests.test_accurate_value_trusted) ... ok
+test_arrival_window_metric (test_bayes.BayesTests.test_arrival_window_metric) ... ok
+test_bayes_policies_safe (test_bayes.BayesTests.test_bayes_policies_safe) ... ok
+test_censored_value (test_bayes.BayesTests.test_censored_value) ... ok
+test_confidence_bounds (test_bayes.BayesTests.test_confidence_bounds) ... ok
+test_delegates_without_noisy_value (test_bayes.BayesTests.test_delegates_without_noisy_value) ... ok
+test_implausible_value_falls_back_to_prior (test_bayes.BayesTests.test_implausible_value_falls_back_to_prior) ... ok
+test_no_truth_access (test_bayes.BayesTests.test_no_truth_access) ... ok
+test_overdue_uses_survival (test_bayes.BayesTests.test_overdue_uses_survival) ... ok
+test_plausible_value_moves_posterior (test_bayes.BayesTests.test_plausible_value_moves_posterior) ... ok
+test_policies_identical_without_noisy_value (test_bayes.BayesTests.test_policies_identical_without_noisy_value) ... ok
+test_reconstruction_rows_unchanged (test_bayes.BayesTests.test_reconstruction_rows_unchanged) ... ok
+test_t_test_and_holm (test_bayes.BayesTests.test_t_test_and_holm) ... ok
+test_conditional_mean (test_core.Tests.test_conditional_mean) ... ok
+test_conditional_noise_ignores_bucket (test_core.Tests.test_conditional_noise_ignores_bucket) ... ok
+test_confidence (test_core.Tests.test_confidence) ... ok
+test_departure_before_arrival (test_core.Tests.test_departure_before_arrival) ... ok
+test_fallback (test_core.Tests.test_fallback) ... ok
+test_host_isolation (test_core.Tests.test_host_isolation) ... ok
+test_host_reset (test_core.Tests.test_host_reset) ... ok
+test_no_truth_access (test_core.Tests.test_no_truth_access) ... ok
+test_oracle_equivalence (test_core.Tests.test_oracle_equivalence) ... ok
+test_rejection (test_core.Tests.test_rejection) ... ok
+test_resources (test_core.Tests.test_resources) ... ok
+test_seed (test_core.Tests.test_seed) ... ok
+test_student_t (test_core.Tests.test_student_t) ... ok
+test_time_integral (test_core.Tests.test_time_integral) ... ok
+test_underflow (test_core.Tests.test_underflow) ... ok
+test_unpaired (test_core.Tests.test_unpaired) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 2.463s
+
+OK

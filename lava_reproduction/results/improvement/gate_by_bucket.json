@@ -1,0 +1,70 @@
+{
+  "note": "post hoc, seeds 1000-1099, tau = report threshold; share of arrivals routed to LAVA by error bucket",
+  "threshold": 0.3,
+  "rows": [
+    {
+      "setting": "0.25",
+      "confidence": "original",
+      "correct_n": 62636,
+      "correct_pass": 0.9993933201353854,
+      "incorrect_n": 187364,
+      "incorrect_pass": 0.9996530817019278
+    },
+    {
+      "setting": "0.25",
+      "confidence": "fused",
+      "correct_n": 62636,
+      "correct_pass": 0.8224024522638738,
+      "incorrect_n": 187364,
+      "incorrect_pass": 0.7319175508635597
+    },
+    {
+      "setting": "0.5",
+      "confidence": "original",
+      "correct_n": 125039,
+      "correct_pass": 1.0,
+      "incorrect_n": 124961,
+      "incorrect_pass": 1.0
+    },
+    {
+      "setting": "0.5",
+      "confidence": "fused",
+      "correct_n": 125039,
+      "correct_pass": 0.8287494301777846,
+      "incorrect_n": 124961,
+      "incorrect_pass": 0.7459287297636863
+    },
+    {
+      "setting": "0.75",
+      "confidence": "original",
+      "correct_n": 187781,
+      "correct_pass": 1.0,
+      "incorrect_n": 62219,
+      "incorrect_pass": 1.0
+    },
+    {
+      "setting": "0.75",
+      "confidence": "fused",
+      "correct_n": 187781,
+      "correct_pass": 0.8304887075902248,
+      "incorrect_n": 62219,
+      "incorrect_pass": 0.7313521593082499
+    },
+    {
+      "setting": "0.85",
+      "confidence": "original",
+      "correct_n": 212529,
+      "correct_pass": 1.0,
+      "incorrect_n": 37471,
+      "incorrect_pass": 1.0
+    },
+    {
+      "setting": "0.85",
+      "confidence": "fused",
+      "correct_n": 212529,
+      "correct_pass": 0.8669593326087264,
+      "incorrect_n": 37471,
+      "incorrect_pass": 0.7386512236129273
+    }
+  ]
+}

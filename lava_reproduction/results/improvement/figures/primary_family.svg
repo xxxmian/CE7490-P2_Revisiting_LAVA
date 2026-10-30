@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="324" viewBox="0 0 1100 324">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="28" font-family="sans-serif" font-size="18">IMPROVEMENT: pre-registered family, seeds 1000-1099, paired 95% CI</text>
+<path d="M522.5913701136017 48 V289" stroke="#777" stroke-dasharray="4 4"/>
+<text x="15" y="68" font-family="sans-serif" font-size="13">acc 0.25, Holm p=1.4e-01 | vm_ca_bayes vs best_fit</text>
+<path d="M510.0 64 H614.0684037117996 M510.0 59 v10 M614.0684037117996 59 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="562.0342018558998" cy="64" r="4" fill="#173c51"/>
+<text x="15" y="96" font-family="sans-serif" font-size="13">acc 0.25, Holm p=3.3e-13 | vm_ca_bayes vs lava</text>
+<path d="M707.6349680622382 92 H815.9809059206111 M707.6349680622382 87 v10 M815.9809059206111 87 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="761.8079369914248" cy="92" r="4" fill="#173c51"/>
+<text x="15" y="124" font-family="sans-serif" font-size="13">acc 0.5, Holm p=2.6e-04 | vm_ca_bayes vs best_fit</text>
+<path d="M590.6113456314442 120 H714.157375450397 M590.6113456314442 115 v10 M714.157375450397 115 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="652.3843605409205" cy="120" r="4" fill="#173c51"/>
+<text x="15" y="152" font-family="sans-serif" font-size="13">acc 0.5, Holm p=1.4e-05 | vm_ca_bayes vs lava</text>
+<path d="M616.581501110295 148 H741.4114139404896 M616.581501110295 143 v10 M741.4114139404896 143 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="678.9964575253923" cy="148" r="4" fill="#173c51"/>
+<text x="15" y="180" font-family="sans-serif" font-size="13">acc 0.75, Holm p=1.7e-15 | vm_ca_bayes vs best_fit</text>
+<path d="M753.9189499693468 176 H870.825959512126 M753.9189499693468 171 v10 M870.825959512126 171 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="812.3724547407364" cy="176" r="4" fill="#173c51"/>
+<text x="15" y="208" font-family="sans-serif" font-size="13">acc 0.75, Holm p=1.1e-01 | vm_ca_bayes vs lava</text>
+<path d="M521.1529544669402 204 H638.4147412383047 M521.1529544669402 199 v10 M638.4147412383047 199 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="579.7838478526224" cy="204" r="4" fill="#173c51"/>
+<text x="15" y="236" font-family="sans-serif" font-size="13">acc 0.85, Holm p=9.8e-23 | vm_ca_bayes vs best_fit</text>
+<path d="M882.9490662261505 232 H1010.0000000000001 M882.9490662261505 227 v10 M1010.0000000000001 227 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="946.4745331130753" cy="232" r="4" fill="#173c51"/>
+<text x="15" y="264" font-family="sans-serif" font-size="13">acc 0.85, Holm p=2.7e-03 | vm_ca_bayes vs lava</text>
+<path d="M562.0917013185707 260 H671.2995490982566 M562.0917013185707 255 v10 M671.2995490982566 255 v10" stroke="#267a89" stroke-width="2"/>
+<circle cx="616.6956252084136" cy="260" r="4" fill="#173c51"/>
+<text x="470.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">-0.049 pp</text>
+<text x="586.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.059 pp</text>
+<text x="702.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.168 pp</text>
+<text x="818.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.277 pp</text>
+<text x="934.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.386 pp</text>
+<text x="1050.0" y="314" text-anchor="middle" font-family="sans-serif" font-size="12">0.495 pp</text>
+</svg>

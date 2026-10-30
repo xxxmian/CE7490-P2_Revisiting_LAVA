@@ -1,0 +1,57 @@
+{
+  "registered_at": "2026-10-28T20:10:34+08:00",
+  "status": "Registered BEFORE any *_bayes run on seeds 20-39, 200-219, 1000-1099 or 2000-2049.",
+  "development": {
+    "seeds": "0-19 only (the report's initial split, already used for exploration)",
+    "explored_and_rejected": [
+      "Expected host-exit extension score from the full lifetime mixture (nilas_ee, lava_ee): synthetic predictor, no gain over NILAS/LAVA (lava_ee -0.194 pp vs LAVA, 95% CI [-0.312,-0.076]).",
+      "MAP lifetime class and max-class-probability confidence (lava_map, vm_ca_map, host_ca_map at tau 0.4/0.5/0.9): no gain over LAVA (all CIs include 0 or are negative)."
+    ],
+    "adopted": "Prior-fused prediction (model.BayesPredictor): dev seeds showed vm_ca_bayes - LAVA = +0.316/+0.187/+0.134/+0.090 pp at accuracy 0.25/0.5/0.75/0.85.",
+    "diagnosis": "Synthetic class confidence is the probability of the class containing the mixture MEAN; interactive VMs are 88% likely <1h yet get confidence 0.092, service VMs get 0.364. Controlled predictions with sigma=3 are trusted fully by LAVA."
+  },
+  "method": {
+    "predictor": "BayesPredictor: posterior of total lifetime from profile prior (configs profiles) x controlled-noise likelihood (global accuracy, sigmas .001/3, censoring at 336 h), conditioned on uptime; point = posterior mean remaining (capped 336 h), confidence = posterior mass of its class.",
+    "policies": [
+      "nilas_bayes",
+      "lava_bayes",
+      "vm_ca_bayes",
+      "host_ca_bayes"
+    ],
+    "scheduler_rules": "identical to nilas/lava/vm_ca/host_ca; only the predictor object differs",
+    "threshold": "0.3 frozen (surviving report value); NOT tuned for the new method",
+    "identical_by_construction": "synthetic and oracle settings (no noisy value to fuse)"
+  },
+  "primary_family": {
+    "suite": "test",
+    "seeds": "1000-1099 (n=100, never used before)",
+    "metric": "empty_pct, paired difference in pp",
+    "tests": [
+      "vm_ca_bayes - lava at accuracy 0.25",
+      "vm_ca_bayes - lava at accuracy 0.5",
+      "vm_ca_bayes - lava at accuracy 0.75",
+      "vm_ca_bayes - lava at accuracy 0.85",
+      "vm_ca_bayes - best_fit at accuracy 0.25",
+      "vm_ca_bayes - best_fit at accuracy 0.5",
+      "vm_ca_bayes - best_fit at accuracy 0.75",
+      "vm_ca_bayes - best_fit at accuracy 0.85"
+    ],
+    "inference": "two-sided paired Student-t; Holm-Bonferroni over these 8 tests; alpha 0.05",
+    "decision_rule": "claim improvement at an accuracy only if mean > 0 and Holm-adjusted p < 0.05"
+  },
+  "secondary_descriptive": [
+    "all other paired comparisons in test (raw p, no correction)",
+    "legacy: seeds 20-39 rerun with all 10 policies for continuity with the report table",
+    "tau: seeds 200-219, vm_ca_bayes at tau in {.1,.2,.3,.5,.7,.8,.9}; sensitivity only, not used for selection",
+    "robust: seeds 2000-2049; bad sigma 1 and 0.5; fusion sigma misspecified both ways; prior means x0.5 and x2; 90 hosts",
+    "empty_pct_arrivals (arrival window only) as a mechanism diagnostic"
+  ],
+  "source_sha256_at_registration": {
+    "lava/__init__.py": "38a47e9ce6bdb4d66767d7331e4887e9b0d3daac001bf922ec9192687b1c64dc",
+    "lava/charts.py": "5b0d45ab27ced9e7f620d6e472e85e70484b45b7afec1a3fae50b847aa5ebf4c",
+    "lava/model.py": "3fe49e542d11fb68a24fa4922f7c34a70a3fd9787a450ec8dac68f8465d46bfe",
+    "lava/simulator.py": "471922adcc8322fe3ae2a9a2ac1a67db169b908b70e109eb436b04c6ac02e644",
+    "lava/stats.py": "5eebbdce9135a0376aa47fee553a1405b451ee51094e9934bc2ec845a137f54a",
+    "run_improvement.py": "e956916be9cbb41d3ec573981ae1c07670556ae6fc6bf26eee6052cae061fdf2"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "suite": "robust",
+  "seeds": [
+    2000,
+    2049
+  ],
+  "n_seeds": 50,
+  "settings": [
+    "0.25",
+    "0.5",
+    "0.75",
+    "0.85"
+  ],
+  "policies": [
+    "best_fit",
+    "nilas",
+    "lava",
+    "vm_ca",
+    "nilas_bayes",
+    "lava_bayes",
+    "vm_ca_bayes"
+  ],
+  "thresholds": [
+    0.3
+  ],
+  "variants": {
+    "bad_sigma=1": {
+      "noise_sigmas": [
+        0.001,
+        1.0
+      ]
+    },
+    "bad_sigma=0.5": {
+      "noise_sigmas": [
+        0.001,
+        0.5
+      ]
+    },
+    "fusion_assumes_3_true_1": {
+      "noise_sigmas": [
+        0.001,
+        1.0
+      ],
+      "fusion_sigmas": [
+        0.001,
+        3.0
+      ]
+    },
+    "fusion_assumes_1_true_3": {
+      "fusion_sigmas": [
+        0.001,
+        1.0
+      ]
+    },
+    "prior_means_x0.5": {
+      "prior_profiles": {
+        "interactive": [
+          0.9,
+          0.15,
+          4.0
+        ],
+        "batch": [
+          0.65,
+          1.0,
+          15.0
+        ],
+        "service": [
+          0.3,
+          2.0,
+          60.0
+        ]
+      }
+    },
+    "prior_means_x2": {
+      "prior_profiles": {
+        "interactive": [
+          0.9,
+          0.6,
+          16.0
+        ],
+        "batch": [
+          0.65,
+          4.0,
+          60.0
+        ],
+        "service": [
+          0.3,
+          8.0,
+          240.0
+        ]
+      }
+    },
+    "hosts=90": {
+      "hosts": 90
+    }
+  },
+  "base_config": {
+    "hosts": 180,
+    "vms": 2500,
+    "arrival_rate": 8,
+    "threshold": 0.3,
+    "cap_hours": 336,
+    "class_bounds": [
+      1,
+      10,
+      100
+    ],
+    "temporal_bounds": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      3,
+      4,
+      6,
+      12,
+      24,
+      168
+    ],
+    "recycle_at": 0.9,
+    "profiles": {
+      "interactive": [
+        0.9,
+        0.3,
+        8
+      ],
+      "batch": [
+        0.65,
+        2,
+        30
+      ],
+      "service": [
+        0.3,
+        4,
+        120
+      ]
+    },
+    "profile_weights": [
+      0.45,
+      0.35,
+      0.2
+    ],
+    "shapes": [
+      [
+        0.125,
+        0.125
+      ],
+      [
+        0.25,
+        0.125
+      ],
+      [
+        0.125,
+        0.25
+      ],
+      [
+        0.5,
+        0.25
+      ],
+      [
+        0.25,
+        0.5
+      ]
+    ],
+    "shape_weights": [
+      0.35,
+      0.2,
+      0.2,
+      0.125,
+      0.125
+    ]
+  },
+  "runs": 9800,
+  "elapsed_s": 143.5,
+  "workers": 64,
+  "python": "3.10.12",
+  "platform": "Linux-5.15.0-161-generic-x86_64-with-glibc2.35",
+  "cpus": 192,
+  "source_sha256": {
+    "lava/__init__.py": "38a47e9ce6bdb4d66767d7331e4887e9b0d3daac001bf922ec9192687b1c64dc",
+    "lava/charts.py": "5b0d45ab27ced9e7f620d6e472e85e70484b45b7afec1a3fae50b847aa5ebf4c",
+    "lava/model.py": "3fe49e542d11fb68a24fa4922f7c34a70a3fd9787a450ec8dac68f8465d46bfe",
+    "lava/simulator.py": "471922adcc8322fe3ae2a9a2ac1a67db169b908b70e109eb436b04c6ac02e644",
+    "lava/stats.py": "5eebbdce9135a0376aa47fee553a1405b451ee51094e9934bc2ec845a137f54a",
+    "run_improvement.py": "e956916be9cbb41d3ec573981ae1c07670556ae6fc6bf26eee6052cae061fdf2",
+    "configs/improvement_protocol.json": "e757a1421509a14b46b48997a5c3f6281e4842b45962ab226053312f7ede667e"
+  },
+  "warning": "Fresh synthetic results of the reconstruction plus a new predictor; not original project outcomes."
+}
