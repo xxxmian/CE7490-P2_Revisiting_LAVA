@@ -301,7 +301,7 @@ def two_columns(items, name):
     # method starts a new page when the remaining band is below this minimum.
     needed = 30
     for flow in items:
-        if (isinstance(flow, Drawing)
+        if (getattr(flow, '_paper_atomic', False) or isinstance(flow, Drawing)
                 or (isinstance(flow, Table) and not flow.splitByRow)):
             _, height = flow.wrapOn(None, COL_W, 1e7)
             needed = max(needed, height + flow.getSpaceBefore() + flow.getSpaceAfter())

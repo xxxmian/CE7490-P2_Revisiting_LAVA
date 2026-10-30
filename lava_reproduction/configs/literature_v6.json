@@ -1,0 +1,113 @@
+[
+  {
+    "id": "lava", "authors": "J. Ling et al.",
+    "title": "LAVA: Lifetime-Aware VM Allocation with Learned Distributions and Adaptation to Mispredictions",
+    "venue": "Proceedings of Machine Learning and Systems", "detail": "vol. 7", "year": 2025,
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2025/hash/9de62e421d58234dbf773abf43268630-Abstract-Conference.html",
+    "additional_url": "https://arxiv.org/html/2412.09840v2", "additional_label": "Extended version, Appendix G.1"
+  },
+  {
+    "id": "borg", "authors": "A. Verma, L. Pedrosa, M. Korupolu, D. Oppenheimer, E. Tune, and J. Wilkes",
+    "title": "Large-scale cluster management at Google with Borg", "venue": "EuroSys", "detail": "pp. 1-17", "year": 2015,
+    "doi": "10.1145/2741948.2741964", "url": "https://research.google/pubs/large-scale-cluster-management-at-google-with-borg/"
+  },
+  {
+    "id": "resource_central", "authors": "E. Cortez, A. Bonde, A. Muzio, M. Russinovich, M. Fontoura, and R. Bianchini",
+    "title": "Resource Central: Understanding and Predicting Workloads for Improved Resource Management in Large Cloud Platforms",
+    "venue": "SOSP", "detail": "pp. 153-167", "year": 2017, "doi": "10.1145/3132747.3132772",
+    "url": "https://www.microsoft.com/en-us/research/publication/resource-central-understanding-predicting-workloads-improved-resource-management-large-cloud-platforms/"
+  },
+  {
+    "id": "lifetime_vm", "authors": "H. Barbalho et al.", "title": "Virtual Machine Allocation with Lifetime Predictions",
+    "venue": "Proceedings of Machine Learning and Systems", "detail": "vol. 5", "year": 2023,
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2023/hash/48eb2c79643df5cb7d125945238bd7d0-Abstract-mlsys2023.html"
+  },
+  {
+    "id": "protean", "authors": "O. Hadary et al.", "title": "Protean: VM Allocation Service at Scale",
+    "venue": "OSDI", "detail": "pp. 845-861", "year": 2020,
+    "url": "https://www.usenix.org/conference/osdi20/presentation/hadary"
+  },
+  {
+    "id": "kaplan_meier", "authors": "E. L. Kaplan and P. Meier", "title": "Nonparametric Estimation from Incomplete Observations",
+    "venue": "Journal of the American Statistical Association", "detail": "53(282):457-481", "year": 1958,
+    "doi": "10.1080/01621459.1958.10501452", "url": "https://doi.org/10.1080/01621459.1958.10501452"
+  },
+  {
+    "id": "holm", "authors": "S. Holm", "title": "A Simple Sequentially Rejective Multiple Test Procedure",
+    "venue": "Scandinavian Journal of Statistics", "detail": "6(2):65-70", "year": 1979,
+    "url": "https://www.jstor.org/stable/4615733"
+  },
+  {
+    "id": "online_vm", "authors": "N. Buchbinder, Y. Fairstein, K. Mellou, I. Menache, and J. Naor",
+    "title": "Online Virtual Machine Allocation with Lifetime and Load Predictions", "venue": "SIGMETRICS", "detail": "pp. 9-10", "year": 2021,
+    "doi": "10.1145/3410220.3456278", "url": "https://www.microsoft.com/en-us/research/publication/online-virtual-machine-allocation-with-lifetime-and-load-predictions/",
+    "additional_url": "https://www.microsoft.com/en-us/research/publication/online-virtual-machine-allocation-with-lifetime-and-load-predictions/",
+    "additional_label": "Author publication page and full paper", "verification_note": "The DOI identifies the two-page SIGMETRICS abstract; the author page supplies the full paper."
+  },
+  {
+    "id": "dynamic_binpacking", "authors": "M. Liu and X. Tang", "title": "Tight Bounds for Dynamic Bin Packing with Predictions",
+    "venue": "Proceedings of the ACM on Measurement and Analysis of Computing Systems", "detail": "8(3), Article 47, pp. 1-28", "year": 2024,
+    "doi": "10.1145/3700437", "url": "https://doi.org/10.1145/3700437"
+  },
+  {
+    "id": "three_sigma", "authors": "J. W. Park, A. Tumanov, A. Jiang, M. A. Kozuch, and G. R. Ganger",
+    "title": "3Sigma: Distribution-based cluster scheduling for runtime uncertainty", "venue": "EuroSys", "detail": "pp. 1-17", "year": 2018,
+    "doi": "10.1145/3190508.3190515", "url": "https://www.pdl.cmu.edu/PDL-FTP/CloudComputing/eurosys18-final49_abs.shtml"
+  },
+  {
+    "id": "tetrisched", "authors": "A. Tumanov, T. Zhu, J. W. Park, M. A. Kozuch, M. Harchol-Balter, and G. R. Ganger",
+    "title": "TetriSched: Global Rescheduling with Adaptive Plan-Ahead in Dynamic Heterogeneous Clusters", "venue": "EuroSys", "detail": "Article 35, pp. 1-16", "year": 2016,
+    "doi": "10.1145/2901318.2901355", "url": "https://www.cs.cmu.edu/~harchol/Papers/EUROSYS16.pdf"
+  },
+  {
+    "id": "memory_allocation", "authors": "M. Maas, D. G. Andersen, M. Isard, M. M. Javanmard, K. S. McKinley, and C. Raffel",
+    "title": "Learning-based Memory Allocation for C++ Server Workloads", "venue": "ASPLOS", "detail": "pp. 541-556", "year": 2020,
+    "doi": "10.1145/3373376.3378525", "url": "https://research.google/pubs/learning-based-memory-allocation-for-c-server-workloads/"
+  },
+  {
+    "id": "quasar", "authors": "C. Delimitrou and C. Kozyrakis", "title": "Quasar: Resource-Efficient and QoS-Aware Cluster Management",
+    "venue": "ASPLOS", "detail": "pp. 127-144", "year": 2014, "doi": "10.1145/2541940.2541941",
+    "url": "https://csl.stanford.edu/~christos/publications/2014.quasar.asplos.pdf"
+  },
+  {
+    "id": "calibration", "authors": "C. Guo, G. Pleiss, Y. Sun, and K. Q. Weinberger", "title": "On Calibration of Modern Neural Networks",
+    "venue": "ICML, Proceedings of Machine Learning Research", "detail": "70:1321-1330", "year": 2017,
+    "url": "https://proceedings.mlr.press/v70/guo17a.html"
+  },
+  {
+    "id": "dataset_shift", "authors": "Y. Ovadia et al.", "title": "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+    "venue": "Advances in Neural Information Processing Systems", "detail": "32:13991-14002", "year": 2019,
+    "url": "https://papers.nips.cc/paper/2019/hash/8558cb408c1d76621371888657d2eb1d-Abstract.html"
+  },
+  {
+    "id": "cox", "authors": "D. R. Cox", "title": "Regression Models and Life-Tables",
+    "venue": "Journal of the Royal Statistical Society, Series B", "detail": "34(2):187-202", "year": 1972,
+    "doi": "10.1111/j.2517-6161.1972.tb00899.x", "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1972.tb00899.x",
+    "verification_note": "Pages 187-202 identify the core article; 187-220 includes the discussion."
+  },
+  {
+    "id": "online_ml", "authors": "R. Kumar, M. Purohit, and Z. Svitkina", "title": "Improving Online Algorithms via ML Predictions",
+    "venue": "Advances in Neural Information Processing Systems", "detail": "31:9661-9670", "year": 2018,
+    "url": "https://papers.nips.cc/paper_files/paper/2018/file/73a427badebe0e32caa2e1fc7530b7f3-Paper.pdf",
+    "verification_note": "Author order follows the official PDF title page, which differs from the conference HTML metadata."
+  },
+  {
+    "id": "student", "authors": "Student", "title": "The Probable Error of a Mean", "venue": "Biometrika", "detail": "6(1):1-25", "year": 1908,
+    "doi": "10.1093/biomet/6.1.1", "url": "https://academic.oup.com/biomet/issue/6/1"
+  },
+  {
+    "id": "preregistration", "authors": "B. A. Nosek, C. R. Ebersole, A. C. DeHaven, and D. T. Mellor", "title": "The Preregistration Revolution",
+    "venue": "Proceedings of the National Academy of Sciences", "detail": "115(11):2600-2606", "year": 2018,
+    "doi": "10.1073/pnas.1708274114", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5856500/"
+  },
+  {
+    "id": "bayes", "authors": "A. Gelman, J. B. Carlin, H. S. Stern, D. B. Dunson, A. Vehtari, and D. B. Rubin", "title": "Bayesian Data Analysis",
+    "venue": "Chapman & Hall/CRC", "detail": "3rd ed.", "year": 2013, "doi": "10.1201/b16018",
+    "url": "https://www.routledge.com/Bayesian-Data-Analysis/Gelman-Carlin-Stern-Dunson-Vehtari-Rubin/p/book/9781439840955"
+  },
+  {
+    "id": "proper_scores", "authors": "T. Gneiting and A. E. Raftery", "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+    "venue": "Journal of the American Statistical Association", "detail": "102(477):359-378", "year": 2007,
+    "doi": "10.1198/016214506000001437", "url": "https://doi.org/10.1198/016214506000001437"
+  }
+]
