@@ -20,7 +20,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
     BalancedColumns, BaseDocTemplate, CondPageBreak, Frame, HRFlowable,
-    Indenter, KeepTogether, PageBreak, PageTemplate, Paragraph, Spacer,
+    Indenter, KeepInFrame, KeepTogether, PageBreak, PageTemplate, Paragraph, Spacer,
     Table, TableStyle,
 )
 from reportlab.graphics.shapes import Drawing, String
@@ -31,6 +31,7 @@ PAGE_W, PAGE_H = 612.0, 792.0
 LEFT, TEXT_W, GUTTER = 55.44, 486.0, 18.0
 COL_W = (TEXT_W - GUTTER) / 2
 TABLE_PADDING = 1.6
+COMPACT_ACCURACY_TABLE = False
 BOTTOM, TOP = 74.0, 67.8
 BLACK = colors.black
 TEAM_FILE = HERE.parent / 'configs' / 'team_members.json'
@@ -159,14 +160,20 @@ def capture_content():
         return PaperParagraph(rendered, source.S[role], role=role, original=text)
 
     def make_table(rows, widths, shade=None, header=True):
+        compact_accuracy = (COMPACT_ACCURACY_TABLE and len(rows[0]) == 2
+                            and rows[0][0] == 'Accuracy / predictor')
+        display_rows = [list(row) for row in rows]
+        if compact_accuracy:
+            display_rows[0][1] = 'Gain [95% CI] (pp)'
         vals = [[p(str(value), 'cellb' if header and row_i == 0 else 'cell')
                  if isinstance(value, str) else value for value in row]
-                for row_i, row in enumerate(rows)]
+                for row_i, row in enumerate(display_rows)]
         total = sum(widths)
         # Small numeric tables fit one column at the same readable type size.
         # Dense result matrices and prose-heavy algorithm tables stay full width.
         narrow = (rows[0][:2] == ['Profile', 'p (short component)']
-                  or (len(rows[0]) == 3 and rows[0][0] == 'Accuracy'))
+                  or (len(rows[0]) == 3 and rows[0][0] == 'Accuracy')
+                  or compact_accuracy)
         if narrow and len(rows[0]) == 3:
             widths = [3.5, 6.25, 6.25]
             total = sum(widths)
@@ -222,7 +229,9 @@ def flatten(items):
     return out
 
 
-def restyle_drawing(drawing):
+def restyle_drawing(drawing, width=TEXT_W):
+    if getattr(drawing, '_paper_final_style', False):
+        return
     def visit(obj):
         if isinstance(obj, String):
             obj.fontName = 'PaperTimes-Bold' if 'Bold' in obj.fontName else 'PaperTimes'
@@ -230,16 +239,73 @@ def restyle_drawing(drawing):
         for child in getattr(obj, 'contents', []):
             visit(child)
     visit(drawing)
-    scale = TEXT_W / drawing.width
+    scale = width / drawing.width
     drawing.scale(scale, scale)
     drawing.width *= scale
     drawing.height *= scale
     drawing.hAlign = 'CENTER'
 
 
+class SafeBalancedColumns(BalancedColumns):
+    """Balance at natural type size, failing visibly rather than shrinking text."""
+
+    def _generated_content(self, avail_width, avail_height):
+        height, generated = super()._generated_content(avail_width, avail_height)
+        for i, flow in enumerate(generated):
+            if isinstance(flow, KeepInFrame):
+                flow.mode = 'error'
+                flow.__dict__.pop('_scale', None)
+            elif isinstance(flow, BalancedColumns):
+                # ReportLab creates base-class continuations internally. Copy
+                # their complete state so subsequent pages retain this guard.
+                safe = self.__class__.__new__(self.__class__)
+                safe.__dict__.update(flow.__dict__)
+                safe._needed = max(flow._needed, self._needed)
+                generated[i] = safe
+        return height, generated
+
+
 def two_columns(items, name):
+    # BalancedColumns does not honor Paragraph.keepWithNext by itself. Bind
+    # each heading to the first three lines of its next paragraph so a heading
+    # cannot be stranded at the bottom of a page or column.
+    attached = []
+    i = 0
+    while i < len(items):
+        flow = items[i]
+        if (isinstance(flow, PaperParagraph) and flow.role in ('h1', 'h2')
+                and i + 1 < len(items) and isinstance(items[i + 1], PaperParagraph)
+                and items[i + 1].role in ('body', 'ref', 'small')):
+            following = items[i + 1]
+            following.wrap(COL_W, 1e7)
+            parts = following.split(COL_W, max(36, following.style.leading * 3)) or [following]
+            if len(parts) > 1:
+                # The starter is still part of the same paragraph; do not add
+                # paragraph spacing between its first lines and continuation.
+                parts[0].spaceAfter = 0
+            holder = Table([[[flow, parts[0]]]], colWidths=[COL_W], hAlign='LEFT', splitByRow=0)
+            holder.setStyle(TableStyle([
+                ('LEFTPADDING', (0, 0), (-1, -1), 0),
+                ('RIGHTPADDING', (0, 0), (-1, -1), 0),
+                ('TOPPADDING', (0, 0), (-1, -1), 0),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 0),
+            ]))
+            attached.extend([holder, *parts[1:]])
+            i += 2
+        else:
+            attached.append(flow)
+            i += 1
+    items = attached
     # Balanced bands let wide tables span both columns at their point of use.
-    return BalancedColumns(items, nCols=2, needed=30, leftPadding=0,
+    # An atomic table/figure must fit at its natural height. The inherited wrap
+    # method starts a new page when the remaining band is below this minimum.
+    needed = 30
+    for flow in items:
+        if (isinstance(flow, Drawing)
+                or (isinstance(flow, Table) and not flow.splitByRow)):
+            _, height = flow.wrapOn(None, COL_W, 1e7)
+            needed = max(needed, height + flow.getSpaceBefore() + flow.getSpaceAfter())
+    return SafeBalancedColumns(items, nCols=2, needed=needed, leftPadding=0,
                            rightPadding=0, innerPadding=GUTTER, topPadding=0,
                            bottomPadding=0, spaceAfter=5, endSlack=0,
                            name=name)
@@ -248,8 +314,11 @@ def two_columns(items, name):
 def assemble(source, content):
     abstract_idx = next(i for i, f in enumerate(content)
                         if isinstance(f, PaperParagraph) and f.original == 'Abstract')
-    finding_idx = next(i for i, f in enumerate(content)
-                       if isinstance(f, PaperParagraph) and 'Principal findings' in f.original)
+    finding_idx = next((i for i, f in enumerate(content)
+                        if isinstance(f, PaperParagraph) and 'Principal findings' in f.original), None)
+    if finding_idx is None:
+        finding_idx = next(i for i, f in enumerate(content)
+                           if isinstance(f, PaperParagraph) and f.role == 'h1')
     abstract = content[abstract_idx + 1:finding_idx]
     title = content[0].original + ':<br/>' + content[1].original
     meta = content[2].original
@@ -303,12 +372,16 @@ def assemble(source, content):
             run = []
     while i < len(body):
         flow = body[i]
-        if isinstance(flow, Table) and getattr(flow, '_paper_narrow', False):
+        if isinstance(flow, (Table, Drawing)) and getattr(flow, '_paper_narrow', False):
             group = []
+            if isinstance(flow, Drawing):
+                restyle_drawing(flow, width=COL_W)
+                group.append(flow)
             if i + 1 < len(body) and isinstance(body[i + 1], PaperParagraph) and body[i + 1].role == 'cap':
                 group.append(body[i + 1])
                 i += 1
-            group.append(flow)
+            if isinstance(flow, Table):
+                group.append(flow)
             # BalancedColumns may unpack KeepTogether while balancing. A
             # single unsplittable cell keeps the caption and table indivisible.
             holder = Table([[group]], colWidths=[COL_W], hAlign='LEFT', splitByRow=0)
