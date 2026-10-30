@@ -4,16 +4,16 @@ CE7490 课程小组项目：重建 Lifetime-Aware VM Allocation（LAVA）仿真�
 
 本仓库集中保存代码、实验结果、汇报幻灯片、报告和组内讨论要点，方便组员阅读与协作。
 
-## 最新成果（第 3 版）
+## 最新成果（报告 v4 / 幻灯片 v3）
 
 | 材料 | 文件 |
 | --- | --- |
-| 报告（PDF） | [Revisiting Lifetime-Aware VM Allocation · Report v3](Revisiting_Lifetime_Aware_VM_Allocation_Report_v3.pdf) |
+| 提交报告（PDF，MLSys 双栏样式） | [Revisiting Lifetime-Aware VM Allocation · Report v4](Revisiting_Lifetime_Aware_VM_Allocation_Report_v4_MLSys.pdf) |
 | 汇报 PPT（可编辑） | [Presentation v3 · PowerPoint](Revisiting_Lifetime_Aware_VM_Allocation_Presentation_v3.pptx) |
 | 幻灯片（PDF 预览） | [Presentation v3 · PDF](Revisiting_Lifetime_Aware_VM_Allocation_Presentation_v3.pdf) |
 | 中文汇报与讨论要点 | [汇报与讨论要点 v3](汇报与讨论要点_v3.md) |
 
-报告共 18 页；幻灯片共 22 页（20 页正文、2 页备份），PPT 备注中包含英文讲稿要点和数据来源。作者行目前使用通用名称，课程提交前可由小组补充成员姓名。
+报告 v4 参照 [LAVA 原论文（MLSys 2025）](https://proceedings.mlsys.org/paper_files/paper/2025/file/9de62e421d58234dbf773abf43268630-Paper-Conference.pdf) 的 Letter 纸张、Times 字体、标题摘要及双栏正文样式重新排版；正文、表格数值、图表数据及参考文献与 v3 一致。[原报告 v3](Revisiting_Lifetime_Aware_VM_Allocation_Report_v3.pdf) 保留供对照。幻灯片共 22 页（20 页正文、2 页备份），PPT 备注中包含英文讲稿要点和数据来源。作者行目前使用通用名称，课程提交前可由小组补充成员姓名。
 
 ## 代码与实验记录
 
@@ -24,7 +24,7 @@ CE7490 课程小组项目：重建 Lifetime-Aware VM Allocation（LAVA）仿真�
 - [冻结的评估协议](lava_reproduction/configs/improvement_protocol.json)
 - [实验原始数据与汇总](lava_reproduction/results/) 和 [改进实验图表](lava_reproduction/results/improvement/figures/)
 
-`lava_reproduction/reference/` 保存历史参考报告、幻灯片及文字提取；阅读最新成果请使用本页上方的 v3 文件。
+`lava_reproduction/reference/` 保存历史参考报告、幻灯片及文字提取；阅读最新成果请使用本页上方的报告 v4 和幻灯片 v3。
 
 ## 快速运行
 
@@ -49,7 +49,13 @@ Windows 可使用 `python` 替代 `python3`。Smoke 用于检查流程；完整�
 - `build_deck.py` 默认依赖的 `Revisiting_Lifetime_Aware_VM_Allocation_Presentation_Updated.pptx` 模板未包含在归档中，且要求模板前两页各有插图。根目录 v3 PPT 可直接阅读、编辑；重新生成前需准备匹配模板并调整脚本配置。
 - `build_report.py` 使用 macOS 的 Arial 字体路径；在 Windows/Linux 上运行前需调整字体配置。
 
-上传整理仅新增仓库首页和根目录忽略规则；原归档文件、实验结果及校验记录均保留。
+MLSys 样式报告可在 `lava_reproduction/` 目录中重新生成：
+
+```sh
+python3 scripts/build_report_mlsys.py
+```
+
+新脚本复用 v3 生成器的正文与结果计算，仅调整排版，需要 Times New Roman（本机）或 Liberation Serif 字体。课程作者信息保留，未加入原论文的会议版权声明。原归档文件、实验结果及校验记录均保留。
 
 ## 小组协作
 
