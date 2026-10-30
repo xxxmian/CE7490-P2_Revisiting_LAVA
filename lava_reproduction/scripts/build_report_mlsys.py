@@ -33,6 +33,11 @@ COL_W = (TEXT_W - GUTTER) / 2
 TABLE_PADDING = 1.6
 BOTTOM, TOP = 74.0, 67.8
 BLACK = colors.black
+TEAM_FILE = HERE.parent / 'configs' / 'team_members.json'
+
+
+def team_metadata():
+    return json.loads(TEAM_FILE.read_text()) if TEAM_FILE.exists() else None
 
 
 def register_fonts():
@@ -248,15 +253,39 @@ def assemble(source, content):
     abstract = content[abstract_idx + 1:finding_idx]
     title = content[0].original + ':<br/>' + content[1].original
     meta = content[2].original
+    team = team_metadata()
+    author_style = ParagraphStyle(
+        'author', fontName='PaperTimes', fontSize=10, leading=12, alignment=TA_CENTER)
+    if team:
+        member_style = ParagraphStyle(
+            'member', fontName='PaperTimes', fontSize=9, leading=10.5, alignment=TA_CENTER)
+        cells = [Paragraph(
+            f'<font size="10"><b>{escape(m["name"])}</b></font> '
+            f'({escape(m["student_id"])})<br/>'
+            f'<font size="8.5">{escape(m["email"])}</font>', member_style)
+            for m in team['members']]
+        members = Table([cells], colWidths=[TEXT_W / len(cells)] * len(cells), hAlign='CENTER')
+        members.setStyle(TableStyle([
+            ('LEFTPADDING', (0, 0), (-1, -1), 2),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 2),
+            ('TOPPADDING', (0, 0), (-1, -1), 0),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 0),
+            ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+        ]))
+        author_block = [
+            Paragraph(f'<b>{escape(team["course"])} · {escape(team["group"])}</b>', author_style),
+            Spacer(1, 4), members,
+        ]
+    else:
+        author_block = [Paragraph('<b>CE7490 Course Project</b>', author_style),
+                        Paragraph(escape(meta), source.S['meta'])]
     story = [
         HRFlowable(width=TEXT_W, thickness=2, color=BLACK, spaceAfter=10),
         Paragraph(small_caps(title.split(':<br/>')[0] + ':', 14.35) + '<br/>' +
                   small_caps(title.split(':<br/>')[1], 14.35), source.S['title']),
         Spacer(1, 12),
-        HRFlowable(width=TEXT_W, thickness=1, color=BLACK, spaceAfter=14),
-        Paragraph('<b>CE7490 Course Project</b>', ParagraphStyle(
-            'author', fontName='PaperTimes', fontSize=10, leading=12, alignment=TA_CENTER)),
-        Paragraph(escape(meta), source.S['meta']), Spacer(1, 14),
+        HRFlowable(width=TEXT_W, thickness=1, color=BLACK, spaceAfter=10 if team else 14),
+        *author_block, Spacer(1, 10 if team else 14),
         Paragraph(small_caps('Abstract', 12), ParagraphStyle(
             'abstract-heading', fontName='PaperTimes-Bold', fontSize=12, leading=14,
             alignment=TA_CENTER, spaceAfter=5)),
@@ -353,11 +382,13 @@ def build(output, audit=None):
         audit.parent.mkdir(parents=True, exist_ok=True)
         audit.write_text(json.dumps(records, ensure_ascii=False, indent=2))
     output.parent.mkdir(parents=True, exist_ok=True)
+    team = team_metadata()
     doc = BaseDocTemplate(
         str(output), pagesize=(PAGE_W, PAGE_H), leftMargin=LEFT,
         rightMargin=PAGE_W-LEFT-TEXT_W, topMargin=TOP, bottomMargin=BOTTOM,
         title='Revisiting Lifetime-Aware VM Allocation: Reconstruction, Diagnosis and Prior-Fused Lifetime Prediction',
-        author='CE7490 Course Project', subject='Course report in the layout style of the LAVA MLSys 2025 paper',
+        author='; '.join(m['name'] for m in team['members']) if team else 'CE7490 Course Project',
+        subject='Course report in the layout style of the LAVA MLSys 2025 paper',
     )
     first = Frame(LEFT, BOTTOM, TEXT_W, PAGE_H-72-BOTTOM, id='first',
                   leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)

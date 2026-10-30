@@ -13,7 +13,7 @@ CE7490 课程小组项目：重建 Lifetime-Aware VM Allocation（LAVA）仿真�
 | 幻灯片（PDF 预览） | [Presentation v3 · PDF](Revisiting_Lifetime_Aware_VM_Allocation_Presentation_v3.pdf) |
 | 中文汇报与讨论要点 | [汇报与讨论要点 v3](汇报与讨论要点_v3.md) |
 
-报告 v4 参照 [LAVA 原论文（MLSys 2025）](https://proceedings.mlsys.org/paper_files/paper/2025/file/9de62e421d58234dbf773abf43268630-Paper-Conference.pdf) 的 Letter 纸张、Times 字体、标题摘要及双栏正文样式重新排版；正文、表格数值、图表数据及参考文献与 v3 一致。[原报告 v3](Revisiting_Lifetime_Aware_VM_Allocation_Report_v3.pdf) 保留供对照。幻灯片共 22 页（20 页正文、2 页备份），PPT 备注中包含英文讲稿要点和数据来源。作者行目前使用通用名称，课程提交前可由小组补充成员姓名。
+报告 v4 参照 [LAVA 原论文（MLSys 2025）](https://proceedings.mlsys.org/paper_files/paper/2025/file/9de62e421d58234dbf773abf43268630-Paper-Conference.pdf) 的 Letter 纸张、Times 字体、标题摘要及双栏正文样式重新排版；正文、表格数值、图表数据及参考文献与 v3 一致。[原报告 v3](Revisiting_Lifetime_Aware_VM_Allocation_Report_v3.pdf) 保留供对照。幻灯片共 22 页（20 页正文、2 页备份），PPT 备注中包含英文讲稿要点和数据来源。最新报告及 PPT 首页已填写 26S1 Group 5 的成员姓名、学号和邮箱。
 
 ## 代码与实验记录
 
@@ -55,7 +55,7 @@ MLSys 样式报告可在 `lava_reproduction/` 目录中重新生成：
 python3 scripts/build_report_mlsys.py
 ```
 
-新脚本复用 v3 生成器的正文与结果计算，仅调整排版，需要 Times New Roman（本机）或 Liberation Serif 字体。课程作者信息保留，未加入原论文的会议版权声明。原归档文件、实验结果及校验记录均保留。
+新脚本复用 v3 生成器的正文与结果计算，仅调整排版，需要 Times New Roman（本机）或 Liberation Serif 字体。作者信息读取 `lava_reproduction/configs/team_members.json`。未加入原论文的会议版权声明。历史版本、实验结果及校验记录均保留。
 
 ## 小组协作
 
