@@ -15,7 +15,7 @@ CE7490 课程小组项目：重建 Lifetime-Aware VM Allocation（LAVA）仿真�
 
 报告 v8 共 12 页，以 [LAVA 原论文（MLSys 2025）](https://proceedings.mlsys.org/paper_files/paper/2025/file/9de62e421d58234dbf773abf43268630-Paper-Conference.pdf) 的字体与双栏风格排版。恢复详细的方法、参数来源、种子设计、验证记录、路由诊断和完整政策比较；仅去掉 4 张重复或辅助表，保留 17 表、3 图和全部 21 项正文引用的学术文献。所有保留结果表的数值与 v6 一致。通过连续分栏和表格自然续栏减少留白，不缩小正文字号。原始结果文件和 [归档报告 v6（14 页）](Revisiting_Lifetime_Aware_VM_Allocation_Report_v6.pdf) 保留供核对。
 
-幻灯片 v4 共 15 页，包含封面与总结，不另设备份页。清楚分为“问题是什么”“实验发现了什么”“我们怎么改进”三块，用直观例子解释 VM、Best-Fit、LAVA 和先验融合；页面简化统计细节，备注保留通用中文讲解和数据来源，不标人员分工。最新报告与 PPT 的成员顺序为 Zhang Qi、Zhang Saining、Zheng Yitao，姓名、学号和邮箱均保留。
+幻灯片 v4 共 15 页，包含封面与总结，不另设备份页。清楚分为“问题是什么”“实验发现了什么”“我们怎么改进”三块，用直观例子解释 VM、Best-Fit、LAVA 和先验融合；页面用算例、机制对照、诊断证据和关键结果串起论证，逐步解释术语；备注保留通用中文讲解、完整统计和数据来源，不标人员分工。最新报告与 PPT 的成员顺序为 Zhang Qi、Zhang Saining、Zheng Yitao，姓名、学号和邮箱均保留。
 
 ## 代码与实验记录
 
