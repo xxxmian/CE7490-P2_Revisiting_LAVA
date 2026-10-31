@@ -4,18 +4,18 @@ CE7490 课程小组项目：重建 Lifetime-Aware VM Allocation（LAVA）仿真�
 
 本仓库集中保存代码、实验结果、汇报幻灯片、报告和组内讨论要点，方便组员阅读与协作。
 
-## 最新成果（报告 v7 / 幻灯片 v4）
+## 最新成果（报告 v8 / 幻灯片 v4）
 
 | 材料 | 文件 |
 | --- | --- |
-| 提交报告（PDF，MLSys 双栏样式） | [Revisiting Lifetime-Aware VM Allocation · Report v7](Revisiting_Lifetime_Aware_VM_Allocation_Report_v7.pdf) |
+| 提交报告（PDF，MLSys 双栏样式） | [Revisiting Lifetime-Aware VM Allocation · Report v8](Revisiting_Lifetime_Aware_VM_Allocation_Report_v8.pdf) |
 | 汇报 PPT（可编辑，15 页） | [Presentation v4 · PowerPoint](Revisiting_Lifetime_Aware_VM_Allocation_Presentation_v4.pptx) |
 | 幻灯片（PDF 预览） | [Presentation v4 · PDF](Revisiting_Lifetime_Aware_VM_Allocation_Presentation_v4.pdf) |
 | 中文汇报与讨论要点 | [汇报与讨论要点 v4](汇报与讨论要点_v4.md) |
 
-报告 v7 共 6 页，沿用 [LAVA 原论文（MLSys 2025）](https://proceedings.mlsys.org/paper_files/paper/2025/file/9de62e421d58234dbf773abf43268630-Paper-Conference.pdf) 的字体与双栏风格，改为连续分栏，减少图表分页留下的大块空白。摘要缩至 124 词；重复说明与表格合并为 5 表、3 图，保留全部 8 项确认检验、后验分解和 32 个相对 LAVA 的鲁棒性结果。21 项学术文献均在正文引用，并附 DOI 或原始出版来源链接。完整数值矩阵可查 [归档报告 v6（14 页）](Revisiting_Lifetime_Aware_VM_Allocation_Report_v6.pdf) 和原始结果文件。
+报告 v8 共 12 页，以 [LAVA 原论文（MLSys 2025）](https://proceedings.mlsys.org/paper_files/paper/2025/file/9de62e421d58234dbf773abf43268630-Paper-Conference.pdf) 的字体与双栏风格排版。恢复详细的方法、参数来源、种子设计、验证记录、路由诊断和完整政策比较；仅去掉 4 张重复或辅助表，保留 17 表、3 图和全部 21 项正文引用的学术文献。所有保留结果表的数值与 v6 一致。通过连续分栏和表格自然续栏减少留白，不缩小正文字号。原始结果文件和 [归档报告 v6（14 页）](Revisiting_Lifetime_Aware_VM_Allocation_Report_v6.pdf) 保留供核对。
 
-幻灯片 v4 共 15 页，包含封面与总结，不另设备份页。内容从 VM、物理主机和 Best-Fit 的基本概念讲起，用直观例子解释 LAVA、预测错误和先验融合；备注含中文讲解提示及数据来源。最新报告与 PPT 的成员顺序为 Zhang Saining、Zhang Qi、Zheng Yitao，姓名、学号和邮箱均保留。
+幻灯片 v4 共 15 页，包含封面与总结，不另设备份页。清楚分为“问题是什么”“实验发现了什么”“我们怎么改进”三块，用直观例子解释 VM、Best-Fit、LAVA 和先验融合；页面简化统计细节，备注保留通用中文讲解和数据来源，不标人员分工。最新报告与 PPT 的成员顺序为 Zhang Qi、Zhang Saining、Zheng Yitao，姓名、学号和邮箱均保留。
 
 ## 代码与实验记录
 
@@ -26,7 +26,7 @@ CE7490 课程小组项目：重建 Lifetime-Aware VM Allocation（LAVA）仿真�
 - [冻结的评估协议](lava_reproduction/configs/improvement_protocol.json)
 - [实验原始数据与汇总](lava_reproduction/results/) 和 [改进实验图表](lava_reproduction/results/improvement/figures/)
 
-`lava_reproduction/reference/` 保存历史参考报告、幻灯片及文字提取；旧版成果保留供对照，阅读最新成果请使用本页上方的报告 v7 和幻灯片 v4。
+`lava_reproduction/reference/` 保存历史参考报告、幻灯片及文字提取；旧版成果保留供对照，阅读最新成果请使用本页上方的报告 v8 和幻灯片 v4。
 
 ## 快速运行
 
@@ -54,10 +54,10 @@ Windows 可使用 `python` 替代 `python3`。Smoke 用于检查流程；完整�
 MLSys 样式报告可在 `lava_reproduction/` 目录中重新生成：
 
 ```sh
-python3 scripts/build_report_v7.py
+python3 scripts/build_report_v8.py
 ```
 
-脚本复用已有结果计算和文献目录，v7 负责内容精简及连续双栏排版。结果表与图直接读取归档结果，正文据冻结结果整理；文献按正文首次引用顺序编号，并检查所有条目均被引用。文献信息在 `configs/literature_v6.json`，图表基础在 `scripts/report_figures.py`。报告需要 Times New Roman（本机）或 Liberation Serif 字体。作者信息读取 `lava_reproduction/configs/team_members.json`。未加入原论文的会议版权声明。历史版本、实验结果及校验记录均保留。
+脚本复用 v6 的正文、结果计算和文献目录，v8 负责适度去重及连续双栏排版。结果表与图直接读取归档结果；文献按正文首次引用顺序编号，并检查所有条目均被引用。文献信息在 `configs/literature_v6.json`，图表基础在 `scripts/report_figures.py`。报告需要 Times New Roman（本机）或 Liberation Serif 字体。作者信息读取 `lava_reproduction/configs/team_members.json`。未加入原论文的会议版权声明。历史版本、实验结果及校验记录均保留。
 
 ## 小组协作
 

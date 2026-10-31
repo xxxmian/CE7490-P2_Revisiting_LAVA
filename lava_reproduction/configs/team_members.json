@@ -3,14 +3,14 @@
   "group": "26S1 Group 5",
   "members": [
     {
-      "name": "Zhang Saining",
-      "student_id": "G2511061H",
-      "email": "saining002@e.ntu.edu.sg"
-    },
-    {
       "name": "Zhang Qi",
       "student_id": "G2510784F",
       "email": "qi015@e.ntu.edu.sg"
+    },
+    {
+      "name": "Zhang Saining",
+      "student_id": "G2511061H",
+      "email": "saining002@e.ntu.edu.sg"
     },
     {
       "name": "Zheng Yitao",
